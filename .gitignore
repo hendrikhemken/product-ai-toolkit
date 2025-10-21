@@ -1,0 +1,54 @@
+# Product-Toolkit .gitignore
+# Keeps personal/generated files local, only commits toolkit structure
+
+# Personal Company Context (user fills this out)
+user_context/COMPANY_CONTEXT.md
+
+# Raw user files (voice notes, docs, etc.)
+user_context/raw/
+
+# Generated outputs (user's work, not part of toolkit)
+outputs/*
+
+# EXCEPT: outreach emails (part of distribution)
+!outputs/outreach/
+!outputs/outreach/**
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies (if any future scripts)
+node_modules/
+.pnp
+.pnp.js
+
+# Env files (if MCP configs stored here)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+*.tmp
+temp/
+tmp/

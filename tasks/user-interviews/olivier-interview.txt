@@ -1,0 +1,263 @@
+Just to give you a bit of perspective of the background. So you've seen things and done things. Yes, a lot. Right now, I'm trying to build the full autonomous, let's say, Product-oriented kind of
+
+Yeah, business model. That's where I'm trying to reach. I'd like to have a first, I have different focus area, especially around product management, because that's my core love story, I would say. And then... Sorry to interrupt. You mean product management is a craft? That is your... Yes.
+
+Yeah, same. I'm a product manager at heart. That's right. That's why I think we have... Because you know what, to be honest, I've done product management all my life. Yeah. But at the time, it was not cool like that. That was not the discipline, you know.
+
+It wasn't disciplined, I guess, it wasn't disciplined. So I discovered a few years ago that actually what I was loving about all the things I had done was primarily the true essence of what product management is all about. From that point in time, because I run my own companies, and you know when you run your company, you do a lot of things. So at one point in time, you don't do product management anymore.
+
+And you don't build product, you build a company which is a rather different focus than building product. What I love is building product. And I decided then more than three years ago then to just do product management. And that's why I stopped my venture and I went to another company as a CPTO for helping the HSS. It was a SAS and then at one point in time I decided to quit.
+
+You know, it was not working the way they didn't want it to build the type of product I would, you know, and I didn't value what I could bring on a table. So I say, you know what, you hired me as an executive to build a vision for your product, but you are not ready to execute.
+
+So, OK, I know that's the struggle. I mean, it's the hardest job in the company to be the CPO, like in general, because you're the second. You have to be completely synced with the CEO and that's just not happening all the time because they do not often know how to do products. So, yeah, communicate. Yeah, and they don't let you do, so that's the problem.
+
+So, yeah, that's about a bit of my story, so that you know, and now, of course, I'm all in AI. Just last week I started to build like three applications, but it's more like still learning. I want to get them out, really, but I want to be very fast. There are applications I want to do in one day. That's the goal.
+
+And then the idea, the ultimate test I want to do, is build an app in one day and get the first client in the same day. That if I can reach that state, Those would be simple app, of course. But the way I'm trying to work now is how I do the specification, or I let the LLM work. And also I said.
+
+Without touching a line of code, of course. Yeah, sure, sure. Who likes to do syntax, right? Like, that's nothing. I mean, to be honest, I enjoy, like, typing Python 2 into the console sometimes. But that's not just on how you get to the goal, right? It's do it for the thing. And that's what the developers like to do it. And I get your point. Yeah, OK. All right. So what about you?
+
+So what about me? Yeah, I'm product by heart as well. I have not studied anything technical. I was like a business major and I'm doing this for 12 years. By the way, I'm a commercial engineer. No, I'm just a business major. But I taught myself coding in my spare time, and I took vacations in coding. Not that nobody would lose it.
+
+Let me lose on a actual GitHub repo of a company. So what I did is like 12 years of product management, mostly FinTech companies, starting at a gaming company back then, doing payments. And then it was the last six years, it was a CPO and first a startup, then a scale up in some fintech thingy. Last one was.
+
+The most interesting one where I got deep into the AI stuff, because we were doing two kinds of AI, like the old recommender style AI and the generative AI on top of that. I was responsible for the second part, the generative AI, where we cleaned basically and made sense of the former recommended data on top of our data. It was basically that we had a
+
+Recommend a list for a good buyer of a company that is being sold. I want to sell a company, give me a couple of good buyers and we will give them good buyers. We will find out what a good buyer is first with the recommender and then with the gender value. It's funny, I just spoke this morning with someone building right just that. Yeah, there are many people coming up with that.
+
+It's not that hard. So, let me put it this way. We were sitting at a quarterly strategic meeting and said, well, there are so many iTunes out there. Can we rebuild our system with AI? Is that possible? And then I was, OK, this didn't let me lose. And I was
+
+Digging myself into the cellar and I was sitting in the cellar for two weeks and finding a combination of tools that will get the job done. As well as we did. And I found a combination and then we did a hackathon and built basically what I had in mind on top of our solution. So and then that's what that was basically the trigger point. It worked. We were
+
+We didn't get it live and scaled in the first month. It took half a year to get to the quality, because back then 4.0 was still there and the quality was not... We had to... from the engineer a lot. It's easier now. But basically, we were three times as fast, the quality was better. We were doing automatically strategic recommendations based on the data, which we were live scraping every time. So we're doing 300
+
+Executions of multiple LLM chains. And so that was my entry drug. And then I didn't stop digging deeper. And it was like half of the time I was in some AI tools and building my own. building the whole day, basically, and just sitting at my desk and building with Cloud Code and writing about that and see what I can make out of that and doing some workshops for some financial institutions here in Hamburg and some interested parties.
+
+What I found out is the product people are the most interested and the people that have the least time. And that's why I would love to... I'm switching a bit from the financial focus because it's not that as fun. I love product management. I like finance, but I love product management.
+
+Now, I want to build something for the product people. And I came up with the idea of the product OS. And there we go. Now, just today, I have just finalized or finished a video about doing OKRs with Cloud Code. And I will put more on top of that and we'll build everything into the product OS, because that's a skeleton, a way how to do this with Cloud Code as kind of a backend.
+
+This is the fun thing like Cloud Code works as a complete back end for whatever you build on top. It's just a Kanban board where you can look into the specification. I can guide you through it. I can show you. Yeah, I'm curious about the code. So on my site, I concentrate on the...
+
+The first time was just GPT's. The idea was to actually don't have codes, but just prompt, yeah? That was the first idea, but I saw that there are a lot of limits with that. But still, I will pursue because there are things to be done there. I need to rework my routing of the document and the rags and so on.
+
+But now I have the last few days I'm working on on actual code base with database and so like more classical and then the last third thing I might go is serverless at less type of. architecture, where you could use something like cloud code or something else. So I'm curious, because my best friend always says, yeah, cloud code is the best.
+
+Imagine the thought that Claude Cote has to be with Cote. That's not at all what it should do, what it has to do. Cloud Code is completely capable of not doing code at all, but doing what Cloud Desktop is doing just better. Yeah, if that is the case, then that would be similar as I do with my From series.
+
+Yeah, because I was big into cloud desktop. It was really good. I had the MCP set up and it was working in my files and stuff, but it was limited to an extent and cloud code is just... A bit harder to set up, but it has a higher ceiling, a way higher ceiling to go. Okay, so to come back here...
+
+So to come back on your idea of ProductOS, what's the thing you try to reach with that? So you want to serve the product management community? Yeah, I will find everything and that's why I'm doing like one-on-ones. I try to do it every day for the next 10 days. So we'll post something on Wednesday to find what are the things that annoy you most. Of course, I know some because I'm a product person. My brother is one as well. So we started that.
+
+And I want to build something that they could actually use in their daily business or daily job and make it available to them. Most likely through GitHub, just pull them. There are a lot of... There are already some plugins or some tools at GitHub that you can pull to create good PRDs and stuff, directly from GitHub as well, but they start as a PRD.
+
+from the PRD state. And they don't have all the rest of the context, like all the idea of the product. What should it serve? Like, and all the shitty canvases of product management, you know about as well. Like, I hate those, but they are necessary. And they have to be baked into, the idea of those canvases has to be baked into the PRD.
+
+So how the product will look like in the end as well. So they have to be part of it. It's not only code. And that's how people currently only looking at things is how to write a good PRD, but they don't get to the first step. How to get the foundation to write a good PRD. So what I built first is basically the PRD side of things and how Cloud Code would...
+
+Trigger agents and how I would look. Okay, I can show you. Let me do this just quickly. So I started the wrong way around because I wanted to see, the harder thing would be definitely. How to have a Kanban board that works automatically with a PRD. So, for example, I have a PRD created. Then I put it in the... It's done, basically. And then I will put it into a stage for development. And then an agent will pick it up automatically, more or less.
+
+Yeah. The status will be, okay, it's done developed or something, then a testing agent will put it up and we'll see if everything was hit criteria-wise. And then we'll ship and all sorts of things. So I started with that, because my question was. Do I get it running? And can I do a Kanban board that looks into those PRDs? And the PRDs are no database item.
+
+Items, they are Markdown files. That is the big differentiator because Markdown files are way better to, well, yeah, it's better to be processed. They have a way, a couple of benefits. You don't need a database. That is a big thing as well, but they are. Yeah, they're easier to work with. Let's let's say like that. I think you could.
+
+I could do it with the database, but I think it's not even necessary. So let me show you really quickly. You could have worked with something like MongoDB, a more documented database, kind of? Or is that no? Yeah, but... But first, we wanted to start simple. And at the second time, maybe it's not even necessary to do that, because about how many...
+
+PRDs, are we talking at the same time? Like, it won't be hundreds, right? Like, you will have, I don't know, five, 10 active who are in development. That is not that much. So I don't know if there is a need for a database at all. Well, it depends to the level where you use your PRD for. On my side, we had much more. But not active ones, right? Not ones that are being currently... Well, I did manage four teams and...
+
+We had at minimum four at a time. And maybe more if they were working on several things where you have to pose for one or two sprints, you know that you might never be ready for like 3 months. But you don't work exclusively on that one. You might have to come back on it. You see, so you're still working. So yeah, I get your point. Yeah, and maybe to compare it, it's not an enterprise level thing, what I'm building. No, no. It's for, I'm building something for myself and maybe with one other person and we will share our PRDs on GitHub as well.
+
+So not even. Like the idea of versioning and saving is basically through GitHub and it's, it does. So it's not something for enterprise or even not even for bigger teams, distributed teams, just for one small product to start with. But I need to say, The final product doesn't really need that part. If you want to build something for product managers, you don't need to build the build part. You just need the part until the PRD thingy, or maybe even one step before. Where you say, okay, the step from the thing that I want to build to the PRD will be actually built.
+
+It has been discussed between the product manager and the engineer. But nevertheless, I wanted to see if that works. If that applies generally. It should be the heavier part. The first part is the easier part, I guess. So let me quickly, how, so have you, have you launched Cloud Code? Like, have you installed it on a computer? Have you had some experience just to get?
+
+I have it, yes. Okay, let me have a window.
+
+That's not the window. I did just that yesterday. Okay, got it. So you can see my window, can't you? Yep. Okay, got it. So that's basically Cloud Code, and that's my, you can initialize it in one folder. It's just a product OS folder like. So you have several things here. You have the application, which is just the application, like the cam and board was the easiest.
+
+Hey, please start the dashboard.
+
+And that's just a way of visualizing things. It's not really...
+
+Not really tough. So...
+
+I'm sorry it's in German actually because I'm actually talking in German to him. I will ask him to translate to English.
+
+So basically, it's not the product, it's just visualizing the PRDs that are in development and sub-strategic documents here. It's ugly as hell, but I just wanted to give it, or get it into... One thing, it works. It looks basically just into the Markdown files. Like those are representations of the Markdown files that I have in my folder. So it's a local running, easy as hell.
+
+And what you can then do is... I don't have drag and drop yet. What I was playing around with, like, okay, how to get to a PRD, that was not a hard thing. I have my PRDs here. Why does it open that so weird? So we have a PRD which has two parts and the bottom part is the normal PRD like the problem, the solution, the impact and goals and success metrics and stuff.
+
+But the part for the LLM, where an LLM gets a real back-end system and it's scalable as well, is the upper part. Because... Claude and all the LLMs are really good through the CLI, through the command line, in getting this top part from a lot of items. Like it's- Yeah, I know. That's where the problem I got on my first application I did. I corrected very fast this thing.
+
+Yeah, so it's the front matter. And what you could do is you can, I have like one sync. You can define commands with cloud code like that. The part of the wrapper around Claude's sonnet, basically that's Claude code. You can have something like commands, hooks, and so on and so forth, and you can define what they should do. So this one.
+
+tells Claude to look into all the files of the PRDs folder and look into the first part and see which ones are in which If you have some in the status development, because I just pushed them there by drag and drop, it will trigger a developer agent, which will then develop it. So that's the trigger, how to move things.
+
+and to do a start button. You can make a button out of that. So when you say it will trigger an agent, what do you mean? Yes. Is that? I'm sorry for the interruption, I have to use it today by myself. First, it is one LLM that is where you are communicating with, that is the one that just answered to me. And you can define sub-agents from here. It has an agents folder where you
+
+Okay, like your system prompt. Pardon? Could you repeat? Is it like a system prompt, kind of? I can show you, actually, because it's just a file. So, it's a Markdown file as well. And it defines, okay, name is full stack developer, description, use this, and this is the default.
+
+description that the main agent will get, and this is the model it will run in, and this is the color, which is random. And then you have a, here is basically the system prompt for that agent. And you can give them, I think, I don't know if they're...
+
+If the tools that it can use are here as well. I think they're in the settings file. You have the settings files here where it's defined what they are capable of doing. You can give them all the rights that they need or reduce it to a bunch of rights.
+
+And they are created through. through the agents command. So you can create new agents through Cloud Code, with Cloud Code, because you can then say, well, That is my prompt. I want to do the agent research or something. And then whenever I tell him, well, I need a deep research from the internet or something, then he will trigger that agent automatically. Like he will decide. And that's where the agentic part comes in.
+
+He will decide based on the communication that we have, when he should trigger which agent, right? Yeah. Okay. That's the agenda, but it works. He spins up multiples. If he has a problem that he divides into, I don't know, five problems or something, I just had that with the research task and he spins up four research agents that are doing things.
+
+So that is basically what I'm doing now with the sync thing. I'm triggering him to look into the files and depending on the status to sync. the relevant agent. For development, trigger the developer agent. Yeah, it's like get start to work, everyone. Exactly, just giving a kick. You can do it in a button or you can
+
+There's still not an issue, but something that's still not completely automatable. Maybe they are still fearing that people will waste too many tokens through that. I don't know. But you can trigger the agents direct. So what I was trying, can I trigger an agent directly
+
+from a change of a PRD. Like, I'm doing a change in the PRD by dragging and dropping them into the next column here, right, like just here. And then the PHY will change because the markdown PHY will be set then into development. And then I would love to trigger the next agent based on that, but that's not completely possible so far, but I think time will, I think that that will come. So, but that's basically the idea and everything that's coming beforehand, like creating the product vision, creating the strategy.
+
+Creating whatever is needed, the canvases that you want to have, and making sure that you hit all your knowledge about the product. You can do the same way as this would be not PRD files, but they would be like vision files with the front matter. That's the part of the.
+
+The top part here is called, like this one, and it will be the same thing. And you can then tell the main agent through... The CLAWD MD file, how the full process is working, because he's the one who's managing the communication. And you have a CLAWD MD file, which is automatically loaded.
+
+into every conversation by default. You don't have to do it manually. And it knows what it should do, what the workflow is. And so on and so forth. And then you have statuses and it will take care of the rest.
+
+So your vision is that people would use code as the base for their work, or what do you think? Yeah, exactly. It's basically the thing that runs in the background. I'm switching to do my journaling, project management for myself and my freelance tasks. You can do everything here. Because you can talk with him and he will update to-do lists. He will update...
+
+Does he do it effectively? Yes. You can tell him, if I tell you, or if we're talking about a project and I tell you there's a new thing, then please write it immediately into the project, without me even... I don't have to give him... Normally, you have different setups. You can define the permissions really, really tightly, or you can say, well, bypass permission for most of the stuff.
+
+It depends on what you're going to do. Bypass permissions, I'm having it on most of the time. Some researchers, I don't, because prompt injection from... from the internet is a thing. But normally I'm doing it like that. But you can talk about except edits. That is something that's like in the midst of everything. Then you can plan mode where he doesn't do any edits and or creation. So where you just communicate with him and plan.
+
+And yeah, different modes for different things. And you can try it in thinking mode. So thinking on, thinking off, that's something that you can do as well. It's a little bit more. to do them with just Cloud Desktop. That was way easier. I think that's the entry drug for everybody. Use Cloud Desktop because you can have a kind of a fancy integration as well, because Cloud Desktop can look into your...
+
+into your files as well. He can do the same thing. You can tell him, work in my desktop folder. There's my to-do list. Tell me what my to-dos are. That was my normal routine. I was telling... Actually, I can show you in a second. for three months now. You have like cloud desktop here and I have a workspace where I have a default system prompt.
+
+that every time is given to Claude's desktop. And here's, I'm telling him, read the MCP files, brain.md, which is my. I don't see. I just see the prune code. Okay, it's the modal that's not... But it has a system problem in the upper right here. Okay.
+
+And so, in the system prompt I tell them, please look into, through the MCP file, let me go quickly. File system integration. Here he can read files and I gave him access to one file on the desktop where I store my projects and stuff. I said, well, go there, read the to-dos, read information about me so he knows me and he...
+
+He knows how strict I am with certain things. He knows what I'm doing and he updates the files by himself as well. And that's the entry document. It worked like a charm. It was extremely good. Okay. But, as I said, Cloud Code is even stronger because you can give them way more capabilities and its way of accessing files is even better than doing it through MCP because the integration of the CLI system.
+
+He can use the command line. I don't do it. I don't do any of the command line thing. The Claude using the command line in the folder structure is way stronger and more efficient than he would be able to do it through the MCP. What you need, what would be a thing that you would find interesting. And if you have thought about that before.
+
+Yeah, that's all. Not a jinx.
+
+I think one of the big problems is having to do a lot of things manually. In the PM world, there is a lot of information coming from different sources. You reconcile the development teams with the team during discovery, with the team in go-to-market in product marketing or sales.
+
+Then you have your reporting to the management, and the information is changing constantly, but it changes at different speeds in the different systems. And what that gives is that there is a lot of reconciliation work to be done, usually. Not to mention that the capture information, like when you test something, what I like now with the flow is the way I work is like...
+
+I can work with my mobile and tell him, yeah, I discovered this. It will create a task. It added to my to-do. It put everything on my to-do. And then I say, okay, now click. It can work for a while because I've done my second and then I've put like rules to say, yeah, if you don't have those specs asked me before or extend them before so that I can review them. So, you know, it's like another agent do the work.
+
+Like, write me a PID for it or, you know. And, yeah, I guess that's a bit the thing is to...
+
+To be able to track all that easily, that is the biggest challenge, I think, on one side. Then for me, that's more like a personal interest, for like two decades, it's...
+
+The product intelligence is how do you compare to your competitors? What are the value points you bring? What problem do you solve? What feature do you have to solve it? How do you link that with the product analytics data when you launch a feature, or can you prove that your metrics have been achieved automatically? Because you know you have in your PID that you want to track this.
+
+Is it tracked anyhow and is it linked to that? Because if you have the PRD, it should be linked and you don't need to bother. Then you update your PRD and say, OK, it has been launched and this is the actual number. So what do you do with that? Right.
+
+Those kind of things. I believe are very important. So with reconciliation, what do you mean with the second, with the to-do list thing? Well, it's like your roadmap plan. But you mean, is it the use case that you are on the go and you want to put something
+
+on the road map from the go, or are you... Yes. Okay, got it. Yeah, because I'm thinking all the time, and, you know, it's like, I want to drop it quickly. But drop it directly in the repo where it needs to be processed, not somewhere else. Because usually I have notes on my mobile, but then I forgot about it.
+
+I don't have my mobile. There are always reasons for not doing it and then you forget about it. There was one guy who did that through his mobile, a programmer as well. Managing agents through his mobile and was on the go and it was just pushing them all the time. There's definitely a way. That's the fun thing. This is integrated into so many...
+
+You can integrate it into so many things through the MCPs, for example, that's just wild. Okay. Okay. But yeah, the reconciliation, I think that is, I think the... The thing where this can really help, like getting main information put together. Also organized testing session.
+
+both by QA and by users, and making sure they are well integrated, documented, and you know that it does. So now when in the PID you have your, what is it called, the The test scenario acceptance criteria, right? Just making sure they are like embedded in the codes and that actually from a product management perspective you get the feedback in your document, not somewhere else.
+
+And you make sure that this is definitely included, right? Like a developer would love to have a unit test. Yes. That's definitely true. Yeah, but that's something else. No, no, sure, sure. The thing that this can do, you can let another agent run across, like from a new, every agent has its own context window, right? It sees.
+
+Different perspective, which is best, yes. If certain things are in place, right? I don't know, are the criteria there? Yeah, so that should be, that is definitely a thing that you can get with the agentic setup. That makes a lot of sense and I think that matches with the stuff that I had before.
+
+Okay. Are you using any, are you using cloud desktop right now or something, some other? I see I'm always in the browser because it's like I have 100 windows open in my browser. I manage with groups. And having another application is more complicated for me than just a browser. Yeah, fair, fair. I was there as well.
+
+I can show you, if you are interested, a friend of mine developed back nearly a year ago, this thing. You would like it, because it's in that direction of what you think, but it was not agentic, that was before the agentic time. But if you make it agentic, that is a bit where you would be going.
+
+That is the preparation, right? Like your product, resources, timeline, brief, user stories.
+
+Yeah, the idea is, like, that is the beauty. Like, cloud code is the agentic backbone of that. And you can not do only that, or you can Do that not only for product stuff, but for basically every knowledge worker who has to do things.
+
+Yeah, yeah, okay. Awesome. Nevertheless, I would recommend for you to try the cloud desktop thing. That cloud manages files for you and displays the files. You don't have to look into the Markdown files. It looks into that and gets them back. And that's that's cool, like like not only cool, but that makes everything smoother. You need a plan, OK? Yeah, so you have a list of MCP server that that are worth. So when when you install it MCP you need to install them locally, right?
+
+It's kind of, yeah, but it's done by Anthropic themselves and it's quite a small thing, to be honest. Okay. So Anthropic is the... They developed the idea of the MCP, so they- Yeah, yeah, no, I know, I know, I see. And the next MCP stuff, like I was really hesitant with MCP service. I didn't want to crush anything. I didn't want to like telephone my data into the wild. What I'm now using is Docker.
+
+Docker is, has... You heard about that. And that works like a charm. And that's the best thing to give cloud code capabilities as well. And that's what changed. Cloud code is really bad in researching and in accessing the internet. Cloud Desktop was way better on that, but now through Docker, it's overtook it.
+
+Yeah, it's better than that. But nevertheless, the feeling, like the way it feels when you just talk, and another question, do you use Super Whisper or something, speech to text? Yes, I'm using WhisperFlow. Yeah, doing that together with Cloud Desktop feels completely different than...
+
+Well, I do it on the web, so just like I speak, but I would like it to be native because I don't want to touch the screen, the button anymore, things like that. Yeah, that is fair. You still have to, like, for IFD function... Like on chatGPT. That's the kind of experience I want. Yeah, that's true. Like the streaming, right? Yes, yes.
+
+That's not there yet, but I have the function button, holding down the function button while I'm talking and then just release it and then it's going. Oh, you have to press enter too. But still, that's a flow that is already so much more fluent, and yeah, I can really recommend doing that. And you can actually, if you install Cloud Desktop, you can ask him, well, I want to create an NCP server for the file system. Please go ahead.
+
+Okay. And yeah, that's what I would definitely recommend if you want to, like, because that's already an agentic experience, because the research is happening with sub-agents behind the curtain of Cloud Desktop. Letting him change and create files is the thing that feels so... On my side, I work a lot with Manus, so I'm used to it.
+
+It does certain things, like you give it something and it comes back with certain things, but it's not that it manages.
+
+All the time, stuff that is all the time available on your system and it's persistent. Menace is, I think, you have a task, go get it. Yeah, yeah, I see what you mean. That's a different flow. Every morning I start up Cloud Desktop or now Cloud Code and it tells me, well, we have worked yesterday on this and this and this.
+
+Today, your calendar says that. How do you want to do that? What do you want to start with? It's really fun. At the same time, it really pushes you. It celebrates wins. It says, well, there, you fucked up. Claude Opus is quite good at that, actually. And that's an experience. Like, I love doing that. It makes work even more enjoyable.
+
+To be honest.
+
+What can I do for you? For now, I still need some time on my side to figure out where I would stop and what I will be actually building. As I mentioned, I have a goal to build an application in a day and be able to release and then reach a client in one day, which is another big challenge because it's a go-to-market strategy and so on. There is a lot to be done there.
+
+Once I reach that, then I will focus on the PM stuff. It isn't vibe coding. Yes, but it's vibe coding, but it's more like assisted, like all the others, right? No, you can have it and it's completely gentic. Like, you can do the same thing with Cloud Code that you do with Repl.it and Lumbo and Core. Ah, that I know, that I know. But they are...
+
+They are a step further in terms of development integration in the stacks in the application world than CodeCode, I guess. Yeah, they have certain things, but the drawback of that is you have no control over what's actually doing behind the curtains. That's the biggest drawback. Yeah, I know. That's why I don't like them. For production, I don't like that for the time being.
+
+But you can give Cloud Code all the functionality that they have as well. What is Cloud Code missing? It needs to look at the thing it built. That is possible with Playwright. So it spins up a browser, makes a screenshot, looks at what it did. You can define coding and testing agent. The main agent can code as well. So you can just let the main agent code everything. That's completely possible as well. You don't need even sub-agents.
+
+You can ask him, well, now take the glasses of a technical architect and structure what we just discussed. Um, maybe even deleting the context, right? You can clear the context and start, okay, we just built this, have a look on that, and that's, and you don't need to code, like, not at all. You can go the same steps, but yes, you need.
+
+To manually click a bit more than for the bolts and replicates and levels, but you have to flow without coding a single thing while giving, having all the time, the possibility to interfere and give them. OK, don't duplicate files, don't over-engineer. Let's talk about the... Tell me what you want to do about the MVP features, the optionals. So do you have a separation of concern, like the development concern and the challenging part? Do you have like also the two windows type of things?
+
+So, you could do it just by a developer agent, but what you could do as well, you can have the main agent, which is nothing else than just CloudSonic or Opus. And tell him, clear his context, and tell him what he is right now. Because if you build, like if you tell him, act as the product manager, and give him maybe some product.
+
+information of Marty Kagan's website or I don't know something. Then he will build the first, then you build some PRDs and the concepts and stuff and then you clear his context. Then you start fresh because, yeah, then you start fresh. So now you are the technical architect. Look at the thing that I have here. That's what I want to.
+
+reach and now create the technical architecture from those documents. So you can do it manually and clean everything what you did before. So, how do you see what's the current context you have and how to clear it and when to clear it? How do you manage that? You see my window, sir, right?
+
+So what you have here, you have context. Yeah, I saw already kind of the graph there or something. Yeah, there's this one. Exactly. You have this one where you have some NTP tools taking text. So, what you can then do is you can say clear. So, it just empties the contact. It wasn't full. It wasn't full. So,
+
+So you see how it fills up, you can make that go away as well. But it's the AutoCamp Compact if it runs to full. Then you can create... You can clear conversation history, but keeping a summary in context. So you can basically work one hour on one thing, exchanging messages back and forth. Then you can say, well, now...
+
+Give me a summary and forget every, and it clears the rest and just keeps the summary. That is something that everybody's now working on because then you can clear on a regular basis the context and just keeping the outcomes. Can you like drop one context, like choose the context you want to work with. Yeah, you can. Then you use, okay, use this context, use another context.
+
+You can resume a conversation where you want to. That is continuing a conversation. That's not the same thing that you have in mind, I think. Those are like chats. Yeah, those are chats. It's not the same thing of what you have in mind, I think. But the context switch is...
+
+It would be a clear thing and it would say, well, now you want to go to developing. Please, maybe you, what you could do is, the best thing is fill up first the first context part and you can create a folder of maybe product management knowledge. Then you can.
+
+Create a folder of technical architecture knowledge or then operation like JavaScript knowledge or something and then say well and this has been decluttered and defy you go into that and say well now you are please Get the knowledge. You are now responsible for advising me in terms of development or whatever. And that's what's happening anyway, right? Like, an LLM is never, like, it's always the same LLM, just with a different prompt and a different, maybe, set of the first context.
+
+Thank you.
+
+All right.
+
+I'm doing the voice thing here all the time. This is the same... Ah, yeah, you use it on your PC. Exactly. I have Super Whisper installed. I'm not typing any... I'm, of course, correcting here and there. You know how that is. But I'm not typing anything. Same as for Cloud Desktop. It's a chat. You can, by the way, you can have...
+
+Where are we?
+
+You can add the more prettier, way prettier, Claude desktop. What is that? Actually, I can click away that. So Cloud Code has an extension in Cursor where I'm at currently, or VS Code, because as you know, Cursor is just the branch. And this is way more chatty, way more usable. It has some limitations, but they are not huge. I really loved when I found that. You can do the same thing as with the other one. You can have, you have the slash commands, but way.
+
+Cleaner way prettier, but you can manage as a piece. It has a different UI That is actually for for product people. That's better the better UI definitely to work with Because it's as ugly as the terminal. You can define what files you wanna drop. I think you have a better way to drag and drop stuff. What else does it have?
+
+Let's see how the agent...
+
+Can I, can I do the agent and let's see, attach file combat.
+
+Interesting that it cannot do the agent stuff.
+
+How can I create an agent from the extension?
+
+So just to give you an idea, like it's a little bit prettier. I don't know why the agents thing is not working here. Might be a limitation that cannot get around.
+
+And you work alone on it or you work with some other people? Well, my brother occasionally helps, but he has a full-time job as well. So we started at the beginning together. Now I'm working on my own. So you also have a full-time job on the side? Yes. I know you told me you focus on this, right? Exactly. I quit basically and try to do as much of that as possible because that's just...
+
+It's just the thing that is the most precious knowledge that you can gather right now. No problem. All right, so you will still continue to work on, to communicate on LinkedIn, I guess? Yeah, LinkedIn is my tool of choice for anything. I'm posting there, sharing, and try to feel what the people like. And I keep basically every good connection from my working time, like they are on LinkedIn.
+
+Yeah, it's easy. All right, yeah, I'll follow through. And don't hesitate if you have something like a bit more... Yeah, like end-to-end for testing the flows? You're definitely on the list of the testers if you have something to show people. Yeah. Yeah, I think I will come up with some kind of, some kind of format of getting the people into Cloud Code because that will.
+
+will be the platform that the people have to be somehow, I don't know, not fluent, but at least they need to use it. That is just... That is the only thing, but I think they will improve that.
+
+Yeah, I'll be, I'll be, I joined another code from France, a group that is starting also there. There is a new community building up. Yeah, and I'm part I'm part of an AI club where we meet every month and we share, you know, things we do and things like that so.
+
+No, that's good. That's good. Nice. All right. It was nice to meet you. Same, Olivier. Thanks for the share. I'll try also to share on LinkedIn sometimes. I might not be regular. It would be just when things happen. When I have something to share, I usually do it. Nice. Yeah, I'm interested in what you come up with. Okay. Yeah, yeah. It's fun times.
+
+Okay, perfect. All right. Thanks a lot. Thank you as well. I wish you a good day. Yeah, same and a good start of the week. Yeah, you too.
