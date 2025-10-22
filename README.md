@@ -10,11 +10,7 @@ A lean, Claude Code-based toolkit that helps Product Managers with their daily w
 - Create OKRs (with best practices from Wodtke + Klau)
 - Write User Stories & break down EPICs
 - Create PRDs in Confluence
-- Sprint Planning
-- Meeting Prep
-- Competitive Analysis
-- Market Research
-- Product Content Creation
+- Weekly OKR check-ins (Monday commitments, Friday celebrations)
 
 **Target Audience:** Solo PMs & PM Teams in Startups, Scale-ups & Corporates
 
@@ -25,14 +21,14 @@ A lean, Claude Code-based toolkit that helps Product Managers with their daily w
 **1. Prerequisites**
 
 - [Claude Code](https://docs.claude.com/en/docs/claude-code) installed
-- MCP Servers configured (Confluence, Jira, Figma - optional but recommended)
+- MCP Servers configured (Confluence, Jira - optional but recommended)
 
 **2. Setup**
 
 ```bash
 # Clone this repo
-git clone https://github.com/hendrikhemken/product-toolkit.git
-cd product-toolkit
+git clone https://github.com/1800Terran/product-ai-toolkit.git
+cd product-ai-toolkit
 
 # Copy the company context template
 cp user_context/COMPANY_CONTEXT.template.md user_context/COMPANY_CONTEXT.md
@@ -51,7 +47,6 @@ The toolkit activates automatically when you mention relevant keywords:
 - **OKRs:** "Let's create my Q4 OKRs" → `okr-expert` skill activates
 - **User Stories:** "Break down this EPIC" → `user-stories` skill activates
 - **PRDs:** "Create a PRD for Feature X" → `prd-creator` skill activates
-- **LinkedIn Content:** `/linkedin` command for thought leadership posts
 
 ---
 
@@ -75,49 +70,28 @@ The toolkit activates automatically when you mention relevant keywords:
 - **Direct publishing** - Creates pages in Confluence via MCP
 - **Jira Epic linking** - Bidirectional PRD ↔ Epic links
 
-### 🚀 Product Content Creation
-- **LinkedIn posts** - Thought leadership content via `/linkedin` command
-- **Meeting prep** - Coming Q4 2025
-- **Sprint planning** - Coming Q4 2025
-
 ---
 
 ## 🛠️ MCP Server Setup (Optional but Recommended)
 
 **For full functionality, configure these MCP servers:**
 
-### Confluence MCP (for PRDs)
-```json
-{
-  "mcp_docker": {
-    "url": "your-confluence-url",
-    "username": "your-email",
-    "api_token": "your-token"
-  }
-}
-```
+### Confluence & Jira MCP (mcp_docker)
 
-### Jira MCP (for User Stories)
-```json
-{
-  "mcp_docker": {
-    "url": "your-jira-url",
-    "username": "your-email",
-    "api_token": "your-token"
-  }
-}
-```
+The toolkit integrates with Confluence (PRDs) and Jira (User Stories) via the `mcp_docker` MCP server.
 
-### Figma MCP (for Design Context)
-```json
-{
-  "figma": {
-    "access_token": "your-figma-token"
-  }
-}
-```
+**Setup:**
+1. Follow [MCP Docker installation guide](https://github.com/QuantGeekDev/mcp-atlassian)
+2. Configure with your Atlassian credentials
+3. Restart Claude Code
 
-**Need help with MCP setup?** → See `/best-practices/FIGMA_MCP.md` for Figma workflow, or [book a session](#-need-help)
+**What you get:**
+- ✅ Create PRDs directly in Confluence
+- ✅ Create Jira tickets from User Stories
+- ✅ Link PRDs ↔ Epics bidirectionally
+- ✅ Search & read existing Confluence pages
+
+**Need help with MCP setup?** → [Book a session](#-need-help)
 
 ---
 
@@ -166,27 +140,30 @@ This toolkit is **free & open source** - use it however you want!
 ## 📂 Repository Structure
 
 ```
-Product-Toolkit/
+product-ai-toolkit/
 ├── README.md                    # You are here
 ├── CLAUDE.md                    # Main instructions for Claude Code
+├── LICENSE                      # MIT License
+├── .gitignore                   # Protects your personal data
 ├── .claude/
-│   ├── commands/                # Slash commands (/linkedin)
+│   ├── commands/                # Slash commands (custom workflows)
 │   └── skills/                  # Agent skills (okr-expert, prd-creator, user-stories)
+│       ├── okr-expert/          # OKR creation & weekly check-ins
+│       ├── okr-monday/          # Monday commitments skill
+│       ├── okr-friday/          # Friday celebration skill
+│       ├── prd-creator/         # PRD creation in Confluence
+│       ├── user-stories/        # Epic breakdown & story creation
+│       └── skill-creator/       # Meta-skill for creating new skills
 ├── user_context/
 │   ├── COMPANY_CONTEXT.template.md   # Fill this out for your company
 │   └── COMPANY_CONTEXT.md            # Your personalized context (gitignored)
 ├── examples/                    # Best practice examples
 │   └── okrs/                    # Example OKRs from real companies (anonymized)
+├── best-practices/              # Deep-dive guides & workflows
 ├── outputs/                     # Your generated deliverables (gitignored)
-│   ├── okrs/
-│   ├── meeting-notes/
-│   └── outreach/
-├── tasks/                       # Task-specific guides & templates
-│   ├── okrs/
-│   ├── user-stories/
-│   ├── sprint-planning/
-│   └── ...
-└── best-practices/              # Deep-dive guides (Figma workflow, etc.)
+│   ├── okrs/                    # Your OKR files
+│   └── prd/                     # Your PRD drafts
+└── tasks/                       # Your personal workspace (gitignored)
 ```
 
 ---
@@ -233,7 +210,7 @@ Claude: "✅ Updated. Confidence level 5/10?
 
 Found a bug? Have a feature request? Want to add a new skill?
 
-- **Issues:** [github.com/hendrikhemken/product-toolkit/issues](https://github.com/hendrikhemken/product-toolkit/issues)
+- **Issues:** [github.com/1800Terran/product-ai-toolkit/issues](https://github.com/1800Terran/product-ai-toolkit/issues)
 - **Discussions:** Share your workflows, ask questions, help others
 - **Pull Requests:** Welcome! Please follow the existing structure
 
