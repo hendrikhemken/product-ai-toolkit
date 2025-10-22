@@ -99,7 +99,7 @@ Happy Friday! 🎉 Let's celebrate - 15 min!
 We're closing Week 3 (Nov 4-8) of Q4 2025.
 
 **Monday's Commitments:**
-- KR1: Follow-up to Till, pricing call with Client X
+- KR1: Follow-up to Client A, pricing call with Client B
 - KR2: Write 3 LinkedIn posts, engage 10 competitor posts
 - KR3: Send NPS survey, start case study outline
 - KR4: Finalize workshop deck, outreach 5 warm leads
@@ -113,7 +113,7 @@ We're closing Week 3 (Nov 4-8) of Q4 2025.
 [User responds...]
 
 🎉 Awesome wins:
-- Till proposal sent (KR1 progress!)
+- Client A proposal sent (KR1 progress!)
 - 3 LinkedIn posts published (KR2 commitment crushed!)
 - Case study outline started (KR3 moving!)
 

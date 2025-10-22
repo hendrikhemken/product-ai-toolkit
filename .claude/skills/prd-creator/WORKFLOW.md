@@ -398,4 +398,4 @@ Nächste Schritte:
 ---
 
 *Detailed PRD Workflow for PRD Creator Skill*
-*Part of Product-Toolkit | Beyond 7*
+*Part of Product-Toolkit*

@@ -22,6 +22,19 @@ tasks/product-content/THOUGHT_LEADERSHIP_STRATEGY.md
 !tasks/product-content/CLAUDE.md
 !tasks/product-content/LINKEDIN_POST_GUIDELINES.md
 
+# Personal user interview notes (contain names, companies, private conversations)
+tasks/user-interviews/*.txt
+tasks/user-interviews/*.md
+# EXCEPT: Keep templates and guides
+!tasks/user-interviews/CLAUDE.md
+!tasks/user-interviews/GUIDE.md
+!tasks/user-interviews/TEMPLATES.md
+
+# Personal slash commands (user-specific workflows)
+.claude/commands/linkedin.md
+# EXCEPT: Keep example templates
+!.claude/commands/example-*.md
+
 # OS Files
 .DS_Store
 .DS_Store?

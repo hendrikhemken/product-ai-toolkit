@@ -30,7 +30,7 @@ For **EACH** Key Result:
 
 **Push for specificity:**
 - ❌ "Work on client stuff" → Too vague!
-- ✅ "Send proposal to Till's CTO" → Specific!
+- ✅ "Send proposal to Client A's CTO" → Specific!
 
 ### 4. Update OKR File
 Update `/outputs/okrs/Q4-2025-OKRs.md` for current week:
@@ -98,7 +98,7 @@ Last week confidence: 5/10
 ✅ Updated! Here's your week:
 
 **This Week's Focus:**
-- KR1: Follow-up to Till, pricing call with Client X
+- KR1: Follow-up to Client A, pricing call with Client B
 - KR2: Write 3 LinkedIn posts, engage 10 competitor posts
 - KR3: Send NPS survey, start case study outline
 - KR4: Finalize workshop deck, outreach 5 warm leads

@@ -215,4 +215,4 @@ or document extraction.
 
 ---
 
-*Created with Product-Toolkit | Beyond 7*
+*Created with Product-Toolkit*

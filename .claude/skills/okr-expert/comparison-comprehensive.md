@@ -1282,4 +1282,3 @@ Use Wodtke's prerequisites to decide IF you should use OKRs. Use Wodtke's weekly
 
 **Analysis by:** Claude AI
 **Date:** October 12, 2025
-**Location:** /Users/hendrikhemken/Desktop/MCP_Files/projects/product_OKRs/
