@@ -13,22 +13,8 @@ outputs/*
 # NO EXCEPTIONS - everything in outputs/ is personal/generated
 # (Originally had outreach exception, but those are personal too!)
 
-# Personal LinkedIn post drafts (user-specific content)
-tasks/product-content/2025-*.md
-tasks/product-content/archive/
-tasks/product-content/THOUGHT_LEADERSHIP_STRATEGY.md
-
-# EXCEPT: Keep templates and guidelines (part of toolkit)
-!tasks/product-content/CLAUDE.md
-!tasks/product-content/LINKEDIN_POST_GUIDELINES.md
-
-# Personal user interview notes (contain names, companies, private conversations)
-tasks/user-interviews/*.txt
-tasks/user-interviews/*.md
-# EXCEPT: Keep templates and guides
-!tasks/user-interviews/CLAUDE.md
-!tasks/user-interviews/GUIDE.md
-!tasks/user-interviews/TEMPLATES.md
+# Complete tasks/ folder is user workspace (Skills are the actual toolkit)
+tasks/
 
 # Personal slash commands (user-specific workflows)
 .claude/commands/linkedin.md
