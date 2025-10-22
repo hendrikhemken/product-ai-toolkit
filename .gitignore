@@ -14,6 +14,15 @@ outputs/*
 !outputs/outreach/
 !outputs/outreach/**
 
+# Personal LinkedIn post drafts (user-specific content)
+tasks/product-content/2025-*.md
+tasks/product-content/archive/
+tasks/product-content/THOUGHT_LEADERSHIP_STRATEGY.md
+
+# EXCEPT: Keep templates and guidelines (part of toolkit)
+!tasks/product-content/CLAUDE.md
+!tasks/product-content/LINKEDIN_POST_GUIDELINES.md
+
 # OS Files
 .DS_Store
 .DS_Store?
