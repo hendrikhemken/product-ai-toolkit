@@ -10,9 +10,8 @@ user_context/raw/
 # Generated outputs (user's work, not part of toolkit)
 outputs/*
 
-# EXCEPT: outreach emails (part of distribution)
-!outputs/outreach/
-!outputs/outreach/**
+# NO EXCEPTIONS - everything in outputs/ is personal/generated
+# (Originally had outreach exception, but those are personal too!)
 
 # Personal LinkedIn post drafts (user-specific content)
 tasks/product-content/2025-*.md
