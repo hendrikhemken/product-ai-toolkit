@@ -366,5 +366,11 @@ Los geht's - erzähl mir vom Epic!"
 
 ---
 
+## Scope
+
+**Dieser Skill erstellt User Stories in Jira. Development passiert in separaten Projekten.**
+
+---
+
 *User Stories Skill für Product-Toolkit*
 *Hendrik Hemken, 2025*

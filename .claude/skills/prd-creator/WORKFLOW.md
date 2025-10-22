@@ -325,33 +325,57 @@ Was fehlt oder muss angepasst werden?"
 **Wenn PM zufrieden:**
 
 1. **Create Page in Confluence:**
-   ```
-   confluence_create_page(
-     space_key: "[SPACE]",
-     title: "[Feature Name] - PRD",
-     content: [Markdown → HTML converted],
-     parent_id: [optional]
-   )
-   ```
+
+   **→ Use the `confluence_create_page` tool**
+
+   **Parameters:**
+   - `space_key`: "[SPACE]" (z.B. "PROD", "DEV")
+   - `title`: "[Feature Name] - PRD"
+   - `content`: Markdown content (wird automatisch zu HTML konvertiert)
+   - `parent_id`: [optional] - Parent Page ID falls Teil größerer Initiative
+
+   **→ Speicher die Page ID** aus der Response für spätere Updates!
 
 2. **Add Labels:**
-   - `prd`
-   - `feature-[name]`
-   - `q[x]-202[x]`
-   - `status-draft`
+
+   **→ Use `confluence_add_label` für jedes Label:**
+
+   - `prd` (immer!)
+   - `feature-[name]` (Feature-spezifisch)
+   - `q[x]-202[x]` (Timeline)
+   - `status-draft` (Status)
+
+   **Beispiel:**
+   ```
+   → confluence_add_label(page_id, "prd")
+   → confluence_add_label(page_id, "feature-multi-upload")
+   → confluence_add_label(page_id, "q2-2025")
+   → confluence_add_label(page_id, "status-draft")
+   ```
 
 3. **Create Epic in Jira (optional):**
+
+   **→ Use the `jira_create_issue` tool**
+
+   **Parameters:**
+   - `project_key`: "[PROJ]" (z.B. "PROD")
+   - `issue_type`: "Epic"
+   - `summary`: "[Feature Name]"
+   - `description`: PRD Link + Summary
+   - `additional_fields`: Labels, etc.
+
+   **Epic Description Example:**
+   ```markdown
+   📄 Product Requirements Document:
+   https://[company].atlassian.net/wiki/spaces/[SPACE]/pages/[ID]
+
+   ## Summary
+   [Brief Summary from PRD]
+
+   See PRD for full details.
    ```
-   jira_create_issue(
-     project_key: "[PROJ]",
-     issue_type: "Epic",
-     summary: "[Feature Name]",
-     description: "PRD: [Confluence Link]",
-     additional_fields: {
-       labels: ["feature-[name]"]
-     }
-   )
-   ```
+
+   **→ Speicher den Epic Key** (z.B. "PROD-123") aus der Response!
 
 4. **Link PRD ↔ Epic:**
    - PRD enthält Epic Link

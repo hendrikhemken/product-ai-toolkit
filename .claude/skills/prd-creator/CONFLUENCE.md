@@ -683,7 +683,7 @@ query: 'space="PROD" AND label="prd" AND label="q2-2025"'
 **Du bist jetzt bereit, PRDs in Confluence wie ein Pro zu managen!**
 
 **Key Takeaways:**
-- ✅ MCP Tools sind native (keine Python-Skripte!)
+- ✅ MCP Tools sind native
 - ✅ Markdown wird automatisch konvertiert
 - ✅ Page ID immer speichern
 - ✅ Version Comments sind Pflicht

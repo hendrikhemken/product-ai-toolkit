@@ -49,7 +49,18 @@ Update `/outputs/okrs/Q4-2025-OKRs.md` for current week:
 - KRN: X/10
 ```
 
-### 5. Summarize & Close
+### 5. Update CURRENT_WEEK.md
+**IMPORTANT:** Always update `/outputs/okrs/CURRENT_WEEK.md` with:
+
+- Week number & period
+- This week's commitments (checkboxes)
+- Updated progress for each KR
+- Updated confidence levels
+- Focus statement
+
+**This is the Single Source of Truth for the current week!**
+
+### 6. Summarize & Close
 **Provide:**
 - This week's focus (4-8 key actions)
 - Any confidence drops or blockers flagged
@@ -103,12 +114,17 @@ See you Friday! 🎉
 
 ## File Reference
 
-**Update:** `/outputs/okrs/Q4-2025-OKRs.md`
+**Update (2 files!):**
+1. `/outputs/okrs/Q4-2025-OKRs.md` (main OKR file - archive of all weeks)
+2. `/outputs/okrs/CURRENT_WEEK.md` (current week only - Single Source of Truth!)
+
+**CRITICAL:** Both files must be updated every Monday!
 
 **Never:**
 - ❌ Change OKRs themselves (no editing mid-quarter!)
 - ❌ Change target numbers
 - ❌ Skip weeks
+- ❌ Forget to update CURRENT_WEEK.md!
 
 ---
 

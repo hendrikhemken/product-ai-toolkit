@@ -69,7 +69,16 @@ Update `/outputs/okrs/Q4-2025-OKRs.md`:
 **KR section (top of file):**
 - Update "Current" values for each KR
 
-### 7. Summarize & Close
+### 7. Update CURRENT_WEEK.md
+**IMPORTANT:** Update `/outputs/okrs/CURRENT_WEEK.md` with:
+
+- Mark completed checkboxes [x]
+- Update "Current Progress" for each KR
+- Prepare for next week (move to Week N+1 if next week starts)
+
+**This keeps the current week view accurate!**
+
+### 8. Summarize & Close
 **Provide:**
 - 2-3 key wins highlighted
 - 1-2 key learnings captured
@@ -138,16 +147,21 @@ Enjoy your weekend - see you Monday! 🚀
 
 ## File Reference
 
-**Update:** `/outputs/okrs/Q4-2025-OKRs.md`
+**Update (2 files!):**
+1. `/outputs/okrs/Q4-2025-OKRs.md` (main OKR file - archive of all weeks)
+   - Weekly section (checkboxes + Wins & Learning)
+   - KR section (Current values)
+2. `/outputs/okrs/CURRENT_WEEK.md` (current week only - Single Source of Truth!)
+   - Mark checkboxes complete
+   - Update progress
 
-**Two places:**
-1. Weekly section (checkboxes + Wins & Learning)
-2. KR section (Current values)
+**CRITICAL:** Both files must be updated every Friday!
 
 **Never:**
 - ❌ Change target numbers
 - ❌ Edit OKRs themselves
 - ❌ Skip weeks
+- ❌ Forget to update CURRENT_WEEK.md!
 
 ---
 

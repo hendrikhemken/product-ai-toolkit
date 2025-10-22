@@ -66,10 +66,29 @@ Ask these questions before finalizing:
 - ❌ "Launch 5 features" → Could be junk
 - ✅ "Launch 5 features with NPS 40+" → Quality gate added
 
-### 5. Finalize & Set Cadence
+### 5. Finalize & Create Files
+
+**Create 2 files when OKRs are finalized:**
+
+**1. Main OKR File:** `/outputs/okrs/Q4-2025-OKRs.md`
+- Full quarter structure (all 10 weeks)
+- Complete OKR details
+- Weekly tracking sections (empty, to be filled)
+- See [TEMPLATES.md](TEMPLATES.md) for full template
+
+**2. Current Week File:** `/outputs/okrs/CURRENT_WEEK.md`
+- Lightweight view (Week 1 initialized)
+- This week's commitments (from Step 4)
+- Current progress for each KR
+- Focus statement
+- See [TEMPLATES.md](TEMPLATES.md) for template
+
+**Critical:** Both files must be created! CURRENT_WEEK.md is auto-loaded via `@import` in CLAUDE.md.
+
+### 6. Set Cadence
 **Wodtke (Startup):**
-- Monday Commitments (15 min)
-- Friday Celebrations (15 min)
+- Monday Commitments (15 min) → Updates both files
+- Friday Celebrations (15 min) → Updates both files
 - 5/10 confidence ratings
 
 **Klau (Corporate):**
@@ -105,6 +124,10 @@ Ask these questions before finalizing:
 
 **Confidence:** 5/10 (Ambitious but achievable)
 **Cadence:** Weekly (Monday commitments, Friday wins)
+
+**Files Created:**
+1. `/outputs/okrs/Q4-2025-OKRs.md` (full quarter, all weeks)
+2. `/outputs/okrs/CURRENT_WEEK.md` (Week 1 initialized with first commitments)
 
 ---
 
@@ -164,13 +187,19 @@ Ask these questions before finalizing:
 
 **Load these files when you need deep details:**
 
+- **[TEMPLATES.md](TEMPLATES.md)** - Full templates for Q4-2025-OKRs.md and CURRENT_WEEK.md (load when creating OKRs!)
 - **[cagan-critical-perspective.md](cagan-critical-perspective.md)** - Prerequisites check, Feature vs Product Teams, when OKRs fail
 - **[wodtke-approach.md](wodtke-approach.md)** - Weekly rhythm, 5/10 confidence, startup approach
 - **[klau-approach.md](klau-approach.md)** - Quarterly grading, transparency, enterprise approach
 - **[comparison.md](comparison.md)** - Wodtke vs Klau decision guide
 - **[best-practices.md](best-practices.md)** - Complete anti-patterns, common mistakes, solutions
 
-**Only load when:**
+**Always load TEMPLATES.md when:**
+- Creating new OKRs for the first time
+- User asks "how do I structure OKRs?"
+- Need to create Q4-2025-OKRs.md or CURRENT_WEEK.md
+
+**Load methodology files when:**
 - User asks for methodology deep-dive
 - Implementing OKRs for first time
 - Troubleshooting OKR problems
