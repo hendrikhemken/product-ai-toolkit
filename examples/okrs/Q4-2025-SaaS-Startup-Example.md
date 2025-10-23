@@ -280,9 +280,9 @@ Prove Product-Market Fit for Mid-Market Teams
 - Marty Cagan - "INSPIRED" (Product Teams, not Feature Teams)
 
 **Internal Resources:**
-- Product-Toolkit: `/tasks/okrs/GUIDE.md` - Best Practices
-- OKR Knowledge: `/tasks/okrs/OKR_Knowledge/` - Deep-dive
+- OKR Expert Skill: `.claude/skills/okr-expert/` - Complete methodology & best practices
 - Company Context: `/user_context/COMPANY_CONTEXT.md` - Strategy alignment
+- Weekly Check-in Skills: `.claude/skills/okr-monday/` & `.claude/skills/okr-friday/`
 
 **Key Insight:**
 > "The secret to OKRs is not the framework, it's the cadence. Without weekly check-ins, OKRs die." - Christina Wodtke

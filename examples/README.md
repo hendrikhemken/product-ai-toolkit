@@ -69,10 +69,10 @@ A complete OKR set for a fictional B2B SaaS startup proving Product-Market Fit.
 
 **Want to understand OKRs deeply?**
 
-- **Methodology Guides:** `/tasks/okrs/GUIDE.md`
-- **Wodtke Approach:** `/tasks/okrs/OKR_Knowledge/wodtke-approach.md`
-- **Best Practices:** `/tasks/okrs/OKR_Knowledge/best-practices.md`
-- **Templates:** `/tasks/okrs/TEMPLATES.md`
+- **OKR Expert Skill:** `.claude/skills/okr-expert/` - Complete OKR methodology, templates & best practices
+- **Best Practices Guide:** `.claude/skills/okr-expert/best-practices.md`
+- **Wodtke & Klau Approaches:** `.claude/skills/okr-expert/wodtke-comprehensive.md` & `klau-approach.md`
+- **Templates:** `.claude/skills/okr-expert/TEMPLATES.md`
 
 **Read the books:**
 - Christina Wodtke - "Radical Focus" (Weekly cadence, confidence ratings)

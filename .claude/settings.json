@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__MCP_DOCKER__jira_delete_issue",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"PreToolUse\", \"permissionDecision\": \"deny\", \"permissionDecisionReason\": \"⚠️ Jira Delete ist aus Sicherheitsgründen deaktiviert. Bitte lösche Tickets manuell in Jira wenn wirklich nötig.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}

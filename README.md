@@ -145,8 +145,10 @@ product-ai-toolkit/
 ├── CLAUDE.md                    # Main instructions for Claude Code
 ├── LICENSE                      # MIT License
 ├── .gitignore                   # Protects your personal data
+├── .claude-plugin/              # Plugin manifests for distribution
+│   ├── marketplace.json         # Beyond 7 PM Toolkit Marketplace
+│   └── plugin.json              # Plugin metadata
 ├── .claude/
-│   ├── commands/                # Slash commands (custom workflows)
 │   └── skills/                  # Agent skills (okr-expert, prd-creator, user-stories)
 │       ├── okr-expert/          # OKR creation & weekly check-ins
 │       ├── okr-monday/          # Monday commitments skill
@@ -160,10 +162,9 @@ product-ai-toolkit/
 ├── examples/                    # Best practice examples
 │   └── okrs/                    # Example OKRs from real companies (anonymized)
 ├── best-practices/              # Deep-dive guides & workflows
-├── outputs/                     # Your generated deliverables (gitignored)
-│   ├── okrs/                    # Your OKR files
-│   └── prd/                     # Your PRD drafts
-└── tasks/                       # Your personal workspace (gitignored)
+└── outputs/                     # Your generated deliverables (gitignored)
+    ├── okrs/                    # Your OKR files
+    └── prd/                     # Your PRD drafts
 ```
 
 ---

@@ -1,0 +1,16 @@
+{
+  "name": "beyond7-pm-toolkit",
+  "description": "Beyond 7 Product Manager Toolkit - OKRs, PRDs, User Stories, Content Creation",
+  "owner": {
+    "name": "Hendrik Hemken - Beyond 7",
+    "url": "https://www.linkedin.com/in/hendrikhemken/"
+  },
+  "categories": ["productivity", "product-management", "agile"],
+  "plugins": [
+    {
+      "name": "pm-toolkit",
+      "source": ".",
+      "description": "Complete Product Manager toolkit with OKR creation (Wodtke + Klau), PRD writing (Confluence + Jira), User Story breakdown, Sprint Planning, and LinkedIn content creation. Built for solo PMs in startups and scale-ups."
+    }
+  ]
+}

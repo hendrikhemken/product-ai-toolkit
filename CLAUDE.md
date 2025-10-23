@@ -126,7 +126,7 @@ Funktioniert > Perfect
    - Keine veralteten Informationen
 
 3. **Struktur & Ordnung garantiert**
-   - ✅ Files an richtiger Stelle (tasks/ oder outputs/)
+   - ✅ Files an richtiger Stelle (outputs/ für Deliverables)
    - ✅ Naming Conventions einhalten
    - ✅ Front Matter vollständig & korrekt
    - ✅ Cross-References aktuell
@@ -261,42 +261,28 @@ status: active
 
 ```
 Product-Toolkit/
+├── .claude-plugin/               # 🔌 Plugin Manifests
+│   ├── marketplace.json         # Beyond 7 PM Toolkit Marketplace
+│   └── plugin.json              # Plugin Metadata
 ├── user_context/
-│   ├── raw/                      # User wirft ALLES hier rein
-│   └── COMPANY_CONTEXT.md        # 🔥 Single Source of Truth
-├── best-practices/               # 🆕 Best Practices Guides
-│   └── FIGMA_MCP.md             # Figma MCP Server Workflow & Rules
-├── tasks/
+│   ├── raw/                     # User wirft ALLES hier rein
+│   └── COMPANY_CONTEXT.md       # 🔥 Single Source of Truth
+├── best-practices/              # Best Practices Guides
+│   ├── FIGMA_MCP.md            # Figma MCP Server Workflow & Rules
+│   └── CLAUDE_CODE_PLUGINS.md  # Plugin Development Guide
+├── outputs/                     # Fertige Deliverables
 │   ├── okrs/
-│   │   ├── CLAUDE.md            # Task-spezifische Instructions
-│   │   ├── GUIDE.md             # Best Practices
-│   │   ├── PROCESS.md           # Step-by-Step
-│   │   ├── TEMPLATES.md         # Ready-to-use Templates
-│   │   └── OKR_Knowledge/       # Deep-Dive Knowledge
-│   ├── user-stories/
-│   ├── sprint-planning/
-│   ├── meeting-prep/
-│   ├── competitive-analysis/
-│   ├── market-research/
-│   ├── user-interviews/         # User Interview Tasks
-│   └── product-content/         # Product Marketing Content Creation
-├── outputs/                      # Fertige Deliverables
-│   ├── okrs/
+│   ├── prd/
 │   └── meeting-notes/
+├── examples/                    # Example OKRs, PRDs, etc.
 └── .claude/
-    ├── commands/                 # Slash Commands
-    │   └── linkedin.md
-    └── skills/                   # 🆕 Agent Skills (model-invoked)
-        ├── okr-expert/           # OKR Creation & Review Skill
-        │   └── SKILL.md
-        ├── okr-monday/           # Monday Commitment Weekly Check-in
-        │   └── SKILL.md
-        ├── okr-friday/           # Friday Celebration Weekly Check-in
-        │   └── SKILL.md
-        ├── prd-creator/          # PRD Creation Skill
-        │   └── SKILL.md
-        └── user-stories/         # User Stories & Epic Breakdown Skill
-            └── SKILL.md
+    └── skills/                  # Agent Skills (model-invoked)
+        ├── okr-expert/          # OKR Creation & Review Skill
+        ├── okr-monday/          # Monday Commitment Weekly Check-in
+        ├── okr-friday/          # Friday Celebration Weekly Check-in
+        ├── prd-creator/         # PRD Creation Skill
+        ├── user-stories/        # User Stories & Epic Breakdown Skill
+        └── skill-creator/       # Create new Skills
 ```
 
 ---
@@ -352,25 +338,14 @@ Product-Toolkit/
 
 ---
 
-## 📋 Available Tasks, Skills & Commands
+## 📋 Available Skills
 
-### 📖 Unterschied: Slash Commands vs. Skills
+### 🤖 Agent Skills (Model-invoked)
 
-**Slash Commands (User-invoked):**
-- User tippt explizit `/command` oder du erkennst Intent und führst automatisch aus
-- Beispiel: `/linkedin`
-- Befinden sich in `.claude/commands/`
+Skills aktivieren sich **automatisch** basierend auf User-Request - du entscheidest autonom wann du sie nutzt.
+User muss NICHT explizit danach fragen, Skills matchen auf Keywords und Context.
 
-**Agent Skills (Model-invoked):**
-- Du entscheidest **autonom** basierend auf User-Request, wann du sie nutzt
-- User muss NICHT explizit danach fragen
-- Skills aktivieren sich automatisch wenn die Description matcht
-- Befinden sich in `.claude/skills/`
-
-### ✅ Slash Commands (Implementiert):
-- **`/linkedin`** - LinkedIn Post erstellen (Thought Leadership)
-
-### ✅ Agent Skills (Implementiert):
+### ✅ Implementierte Skills:
 - **`okr-expert`** - OKR Creation & Review (Wodtke + Klau Best Practices)
   - Location: `.claude/skills/okr-expert/SKILL.md`
   - Trigger: "OKR", "objectives", "key results", "quarterly planning"
@@ -386,39 +361,9 @@ Product-Toolkit/
 - **`user-stories`** - User Stories & Epic Breakdown für Jira
   - Location: `.claude/skills/user-stories/SKILL.md`
   - Trigger: "User Stories", "break down epic", "Jira tickets", "Backlog"
-
-### ⏳ Coming Q4 2025:
-- Sprint Planning
-- Meeting Prep
-
----
-
-## 🧭 Wie du mit Tasks arbeitest
-
-**🚨 WICHTIG: Task-spezifische Instructions sind NICHT in dieser Datei!**
-
-### Intent Recognition & Slash Commands
-
-**Wenn der User einen Task starten will, führe AUTOMATISCH den entsprechenden Slash Command aus:**
-
-| User sagt... | Du führst aus... |
-|--------------|------------------|
-| "Lass uns einen LinkedIn Post erstellen" | `/linkedin` |
-| "Ich brauche einen LinkedIn Post" | `/linkedin` |
-| "LinkedIn Post über [Thema]" | `/linkedin` |
-
-**Der User muss NICHT selbst `/command` tippen - du erkennst die Intention und führst automatisch aus!**
-
-**OKR-bezogene Anfragen werden automatisch vom `okr-expert` Skill erkannt (kein Slash Command nötig).**
-
----
-
-### Workflow (Fallback - falls kein Slash Command existiert):
-
-Falls kein Slash Command existiert:
-1. Lies `/tasks/[task-name]/CLAUDE.md`
-2. Folge den Task-spezifischen Instructions
-3. Task-spezifisches Knowledge liegt in `/tasks/[task-name]/`
+- **`skill-creator`** - Create new Claude Code Skills
+  - Location: `.claude/skills/skill-creator/SKILL.md`
+  - Trigger: "create a skill", "new skill", "skill that does"
 
 ---
 

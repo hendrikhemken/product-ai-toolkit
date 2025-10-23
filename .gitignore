@@ -13,14 +13,6 @@ outputs/*
 # NO EXCEPTIONS - everything in outputs/ is personal/generated
 # (Originally had outreach exception, but those are personal too!)
 
-# Complete tasks/ folder is user workspace (Skills are the actual toolkit)
-tasks/
-
-# Personal slash commands (user-specific workflows)
-.claude/commands/linkedin.md
-# EXCEPT: Keep example templates
-!.claude/commands/example-*.md
-
 # OS Files
 .DS_Store
 .DS_Store?
@@ -59,3 +51,6 @@ node_modules/
 *.tmp
 temp/
 tmp/
+
+# Internal Skills (not part of public toolkit)
+.claude/skills/hook-creator/
