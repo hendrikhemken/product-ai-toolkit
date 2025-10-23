@@ -361,6 +361,18 @@ User muss NICHT explizit danach fragen, Skills matchen auf Keywords und Context.
 - **`user-stories`** - User Stories & Epic Breakdown für Jira
   - Location: `.claude/skills/user-stories/SKILL.md`
   - Trigger: "User Stories", "break down epic", "Jira tickets", "Backlog"
+- **`interview-guide`** - User Interview Guide Creation (Discovery, Validation, Usability)
+  - Location: `.claude/skills/interview-guide/SKILL.md`
+  - Trigger: "interview guide", "user research", "discovery interviews", "usability testing"
+- **`interview-analysis`** - User Research Synthesis & Insight Extraction
+  - Location: `.claude/skills/interview-analysis/SKILL.md`
+  - Trigger: "analyze interviews", "interview insights", "research synthesis", "extract findings"
+- **`jira-comment-digest`** - Jira Comment Thread Summarization
+  - Location: `.claude/skills/jira-comment-digest/SKILL.md`
+  - Trigger: "Jira comments", "comment digest", "ticket discussions"
+- **`user-context`** - Interactive Company/Product/Team Context Setup
+  - Location: `.claude/skills/user-context/SKILL.md`
+  - Trigger: "setup context", "getting started", "onboarding", "update context"
 - **`skill-creator`** - Create new Claude Code Skills
   - Location: `.claude/skills/skill-creator/SKILL.md`
   - Trigger: "create a skill", "new skill", "skill that does"

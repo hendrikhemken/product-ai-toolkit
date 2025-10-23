@@ -714,6 +714,40 @@ Erzähl kurz von dir – was machst du, wie lange schon PM?"
 
 ---
 
+## Analysis Configuration (Optional)
+
+**Add this section to interview guide if you want custom analysis output:**
+
+```markdown
+## Analysis Configuration
+*For use with interview-analysis Skill*
+
+**Input Location:**
+- Raw files: `/user_context/raw/interviews/[project-name]/`
+- Expected formats: .txt, .md, .pdf
+
+**Analysis Focus:**
+focus_areas:
+  - Pain Points (High Priority)
+  - Jobs to be Done (Medium Priority)
+  - Feature Requests (Low Priority)
+
+**Settings:**
+- confidence_threshold: Medium (only report Medium+ confidence insights)
+- quote_limit: 3 per insight (max verbatim quotes)
+- segment_analysis: false (or true if tracking B2B vs. B2C, roles, etc.)
+
+**Expected Participants:** [Number, e.g., 10]
+**Segments (if applicable):** [e.g., "B2B Enterprise, B2B Scale-up, B2C"]
+```
+
+**Why useful:**
+- Guides `interview-analysis` Skill on what to prioritize
+- Sets expectations for output format
+- Defines segments if needed (B2B vs. B2C, roles, etc.)
+
+---
+
 ## Next Steps After Guide Creation
 
 1. **Pilot with 1-2 People**
@@ -732,18 +766,38 @@ Erzähl kurz von dir – was machst du, wie lange schon PM?"
    - Observer-Regeln
    - Tools testen
 
-4. **Run Sessions**
+4. **Create Interview Folders**
+   - Input: `/user_context/raw/interviews/[project-name]/`
+   - Output: `/outputs/interviews/[project-name]/`
+
+5. **Run Sessions**
    - Follow guide (aber flexibel!)
    - Probes nutzen
    - Schweigen aushalten
+   - Save transcripts/notes to input folder
 
-5. **Synthesize Findings**
-   - Affinity Mapping (kollaborativ!)
-   - Thematic Analysis
-   - Create actionable insights
-   - **Next Skill:** Interview Processing! (nutze dafür separate Skill)
+6. **Synthesize Findings**
+   - **Use Skill:** `interview-analysis` (automated synthesis!)
+   - OR manual: Affinity Mapping, Thematic Analysis
+   - Output: `/outputs/interviews/[project-name]/[project]-analysis.md`
+
+---
+
+## Integration with Other Skills
+
+**Downstream:**
+- **`interview-analysis` Skill** - Analyzes interview outputs against this guide
+  - References research goals from this guide
+  - Maps findings to questions
+  - Generates synthesis report
+
+**Workflow:**
+1. Create guide with `interview-guide` Skill → `/outputs/interview-guides/`
+2. Run interviews → Save to `/user_context/raw/interviews/[project]/`
+3. Analyze with `interview-analysis` Skill → `/outputs/interviews/[project]/`
 
 ---
 
 *Based on Nielsen Norman Group, Teresa Torres, Rob Fitzpatrick (Mom Test), JTBD Framework, IDEO*
 *Created with Product-Toolkit*
+*Companion Skill: interview-analysis*

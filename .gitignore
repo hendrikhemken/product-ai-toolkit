@@ -5,13 +5,14 @@
 user_context/COMPANY_CONTEXT.md
 
 # Raw user files (voice notes, docs, etc.)
-user_context/raw/
+user_context/raw/*
+# EXCEPT: Keep README.md structure guides
+!user_context/raw/**/README.md
 
 # Generated outputs (user's work, not part of toolkit)
 outputs/*
-
-# NO EXCEPTIONS - everything in outputs/ is personal/generated
-# (Originally had outreach exception, but those are personal too!)
+# EXCEPT: Keep README.md structure guides
+!outputs/**/README.md
 
 # OS Files
 .DS_Store
