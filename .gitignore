@@ -53,5 +53,7 @@ node_modules/
 temp/
 tmp/
 
-# Internal Skills (not part of public toolkit)
-.claude/skills/hook-creator/
+# Private Skills (contain personal data, not synced to GitHub)
+# Add your private skills here if needed
+# Example:
+# .claude/skills/my-private-skill/

@@ -62,6 +62,9 @@ Ask user:
 - **What's the core task?** (1 sentence)
 - **When should it trigger?** (specific keywords/scenarios)
 - **Supporting files needed?** (templates, scripts, references)
+- **🔒 Public or Private Skill?**
+  - **Public:** Synced to GitHub, listed in plugin.json & CLAUDE.md (shareable)
+  - **Private:** In .gitignore, NOT in plugin.json/CLAUDE.md (personal data safe)
 
 ### 2. Design Skill Structure
 **Minimal by default:**
@@ -97,7 +100,41 @@ description: [What it does + When to use it. THIRD PERSON. Specific triggers!]
 - ✅ **What + When** (functionality + use cases)
 - ✅ **Max 1024 chars** (concise!)
 
-### 4. Test Trigger Description
+### 4. Configure Public/Private Mode
+
+**If PRIVATE Skill:**
+1. **Add to `.gitignore`:**
+   ```
+   # Private Skills (personal data, not synced to GitHub)
+   .claude/skills/[skill-name]/
+   ```
+2. **DO NOT add to `plugin.json`** (skip step 5)
+3. **DO NOT add to `CLAUDE.md`** (skip step 6)
+
+**If PUBLIC Skill:**
+1. **Skip .gitignore** (will be synced to GitHub)
+2. **Proceed to steps 5 & 6** (add to plugin.json & CLAUDE.md)
+
+### 5. Update plugin.json (PUBLIC Skills only)
+
+Add to `.claude-plugin/plugin.json` in `components.skills` array:
+```json
+{
+  "name": "[skill-name]",
+  "description": "[One-line description matching SKILL.md]"
+}
+```
+
+### 6. Update CLAUDE.md (PUBLIC Skills only)
+
+Add to `## 📋 Available Skills` section:
+```markdown
+- **`[skill-name]`** - [Brief description]
+  - Location: `.claude/skills/[skill-name]/SKILL.md`
+  - Trigger: "[keywords]", "[scenarios]", "[file types]"
+```
+
+### 7. Test Trigger Description
 
 **✅ Good Examples:**
 
@@ -115,10 +152,36 @@ description: [What it does + When to use it. THIRD PERSON. Specific triggers!]
 - "I can help you process Excel files." (first person, not third!)
 - "Processes data." (what data? when?)
 
-### 5. Validate & Iterate
+### 8. Validate & Iterate
+
+**Functionality Test:**
 - Test: Ask Claude a question matching the description
 - Debug: If not triggering → check description specificity
 - Refine: Remove unnecessary steps, keep it lean
+
+**Public/Private Validation Checklist:**
+
+**For PRIVATE Skills:**
+- ✅ Skill folder added to `.gitignore`
+- ✅ Skill NOT listed in `.claude-plugin/plugin.json`
+- ✅ Skill NOT listed in `CLAUDE.md`
+- ✅ Skill NOT mentioned in `.claude-plugin/marketplace.json`
+
+**For PUBLIC Skills:**
+- ✅ Skill NOT in `.gitignore` (will sync to GitHub)
+- ✅ Skill added to `.claude-plugin/plugin.json` components.skills array
+- ✅ Skill added to `CLAUDE.md` Available Skills section
+- ✅ Description matches across SKILL.md, plugin.json, and CLAUDE.md
+
+**Quick Validation Commands:**
+```bash
+# Check if skill is private (should appear if private)
+grep "[skill-name]" .gitignore
+
+# Check if skill is public (should appear if public)
+grep "[skill-name]" .claude-plugin/plugin.json
+grep "[skill-name]" CLAUDE.md
+```
 
 ---
 
@@ -150,6 +213,18 @@ description: [What it does + When to use it. THIRD PERSON. Specific triggers!]
 - Offer **too many options** without clear default
 - Over-engineer before validation
 - Create supporting files "just in case"
+
+**🔒 Public/Private Decision Guide:**
+- ✅ **Make PRIVATE if:**
+  - Contains personal company data (COMPANY_CONTEXT.md, client names)
+  - Uses sensitive API keys or credentials
+  - Includes proprietary workflows or methodologies
+  - References internal tools/systems not shareable
+- ✅ **Make PUBLIC if:**
+  - Generic workflow applicable to anyone
+  - No personal/sensitive data dependencies
+  - Adds value to Product-Toolkit for others
+  - Safe to share on GitHub publicly
 
 ---
 
@@ -190,6 +265,40 @@ Extract text and tables from PDF files, fill forms, merge documents.
 Use when working with PDF files or when the user mentions PDFs, forms,
 or document extraction.
 ```
+
+---
+
+## Example: Public vs. Private Skill
+
+### Example 1: PUBLIC Skill (okr-expert)
+**Why Public?**
+- Generic OKR methodology (Wodtke + Klau)
+- No personal company data
+- Adds value to anyone using Product-Toolkit
+- Safe to share on GitHub
+
+**Implementation:**
+- ✅ SKILL.md created in `.claude/skills/okr-expert/`
+- ✅ Listed in `.claude-plugin/plugin.json`
+- ✅ Listed in `CLAUDE.md`
+- ❌ NOT in `.gitignore`
+
+### Example 2: PRIVATE Skill (client-specific automation)
+**Why Private?**
+- References specific client company names
+- Uses internal tool URLs/credentials
+- Contains proprietary methodologies
+- Should NOT be on public GitHub
+
+**Implementation:**
+- ✅ SKILL.md created in `.claude/skills/client-automation/`
+- ✅ Added to `.gitignore`: `.claude/skills/client-automation/`
+- ❌ NOT in `.claude-plugin/plugin.json`
+- ❌ NOT in `CLAUDE.md`
+
+**Example Private Skills:**
+- `client-automation/` - Contains client-specific workflows
+- `my-company-data/` - Contains proprietary company data
 
 ---
 

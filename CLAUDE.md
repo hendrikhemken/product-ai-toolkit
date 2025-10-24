@@ -157,9 +157,9 @@ Claude: "OK, updated."
 ✅ **SONDERN SO:**
 ```
 User: "Update meine OKRs"
-Claude: "Klar! Welche OKRs meinst du - Q4 2025?
+Claude: "Klar! Welche OKRs meinst du - Q4?
 
-Ich sehe in /outputs/okrs/Q4-2025-OKRs.md:
+Ich sehe in /outputs/okrs/Q4-OKRs.md:
 - KR1: von 0.5 auf 0.6 (On Track! 🟢)
 - KR2: immer noch 0.3 (Blocker? 🟡)
 - KR3: von 0.4 auf 0.7 (Wow! 🎉)
@@ -167,7 +167,7 @@ Ich sehe in /outputs/okrs/Q4-2025-OKRs.md:
 Overall Score: 0.53
 
 Frage: KR2 stuck bei 0.3 - was blockiert?
-Braucht ihr Hilfe oder Pivot?"
+Brauchst du Hilfe oder Pivot?"
 ```
 
 **Du beobachtest, trackst, antizipierst:**
@@ -204,10 +204,10 @@ Claude: "Cool, über welches Thema?"
 ✅ **SONDERN SO:**
 ```
 User: "Ich schreibe einen LinkedIn Post"
-Claude: "Cool! Das zahlt auf KR2 ein (20 Discovery Calls from LinkedIn)!
+Claude: "Cool! Das zahlt auf dein KR2 ein (z.B. 'Generate X Leads')!
 
-Aktuell: 2/20 calls, Confidence 5/10
-These week's commitment: Content vorbereiten ✅
+Aktuell: 2/20, Confidence 5/10
+This week's commitment: Content vorbereiten ✅
 
 Über welches Thema?"
 ```
@@ -262,7 +262,7 @@ status: active
 ```
 Product-Toolkit/
 ├── .claude-plugin/               # 🔌 Plugin Manifests
-│   ├── marketplace.json         # Beyond 7 PM Toolkit Marketplace
+│   ├── marketplace.json         # Product-Toolkit Marketplace
 │   └── plugin.json              # Plugin Metadata
 ├── user_context/
 │   ├── raw/                     # User wirft ALLES hier rein
@@ -406,6 +406,5 @@ User muss NICHT explizit danach fragen, Skills matchen auf Keywords und Context.
 ---
 
 *CLAUDE.md für Product-Toolkit*
-*By Hendrik Hemken | Beyond 7 - AI Consulting & Training*
-*Hamburg, 2025*
-*[linkedin.com/in/hendrikhemken](https://linkedin.com/in/hendrikhemken)*
+*Created by [Hendrik Hemken](https://linkedin.com/in/hendrikhemken)*
+*Open Source PM Toolkit - 2025*

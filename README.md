@@ -2,7 +2,7 @@
 
 **AI-Powered Product Management Assistant for Claude Code**
 
-*By Hendrik Hemken | Beyond 7 - AI Consulting & Training*
+*Created by [Hendrik Hemken](https://linkedin.com/in/hendrikhemken)*
 
 ---
 
@@ -133,7 +133,6 @@ This toolkit is **free & open source** - use it however you want!
 - OKR coaching & implementation
 
 👉 **[Connect on LinkedIn](https://linkedin.com/in/hendrikhemken)**
-👉 **Coming soon:** beyond7.ai website with booking
 
 ---
 
@@ -146,7 +145,7 @@ product-ai-toolkit/
 ├── LICENSE                      # MIT License
 ├── .gitignore                   # Protects your personal data
 ├── .claude-plugin/              # Plugin manifests for distribution
-│   ├── marketplace.json         # Beyond 7 PM Toolkit Marketplace
+│   ├── marketplace.json         # Product-Toolkit Marketplace
 │   └── plugin.json              # Plugin metadata
 ├── .claude/
 │   └── skills/                  # Agent skills (okr-expert, prd-creator, user-stories)
@@ -248,12 +247,11 @@ Built with:
 
 ---
 
-**Built by Hendrik Hemken | Beyond 7 - AI Consulting & Training**
+**Created by [Hendrik Hemken](https://linkedin.com/in/hendrikhemken)**
 
-*Former CPO (12 years FinTech) → Now helping teams leverage AI for better product work*
+*Open Source PM Toolkit - Help PMs leverage AI for better product work*
 
 👉 [linkedin.com/in/hendrikhemken](https://linkedin.com/in/hendrikhemken)
-👉 beyond7.ai (coming soon)
 
 ---
 

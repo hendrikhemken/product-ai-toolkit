@@ -1,8 +1,8 @@
 {
-  "name": "beyond7-pm-toolkit",
-  "description": "Beyond 7 Product Manager Toolkit - OKRs, PRDs, User Stories, Content Creation",
+  "name": "pm-toolkit",
+  "description": "Product Manager Toolkit - OKRs, PRDs, User Stories, Content Creation",
   "owner": {
-    "name": "Hendrik Hemken - Beyond 7",
+    "name": "Hendrik Hemken",
     "url": "https://www.linkedin.com/in/hendrikhemken/"
   },
   "categories": ["productivity", "product-management", "agile"],

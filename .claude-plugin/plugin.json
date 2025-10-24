@@ -1,11 +1,11 @@
 {
   "name": "pm-toolkit",
   "version": "0.1.0",
-  "description": "Beyond 7 Product Manager Toolkit - Complete PM workflow automation with Claude Code",
+  "description": "Product Manager Toolkit - Complete PM workflow automation with Claude Code",
   "author": {
-    "name": "Hendrik Hemken - Beyond 7",
+    "name": "Hendrik Hemken",
     "url": "https://www.linkedin.com/in/hendrikhemken/",
-    "email": "hendrik@beyond7.ai"
+    "email": "hendrik@builderlabs.ai"
   },
   "repository": {
     "type": "git",
