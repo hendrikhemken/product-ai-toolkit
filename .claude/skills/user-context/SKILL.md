@@ -113,7 +113,7 @@ Update `/user_context/COMPANY_CONTEXT.md`:
 **Important:**
 - Update `last_updated` field to current date
 - Keep existing content that wasn't changed (Update Mode)
-- Follow template structure from `/user_context/COMPANY_CONTEXT.md`
+- Follow template structure from `.claude/skills/user-context/TEMPLATE.md`
 - Team members go in Body (NOT YAML front matter!) under "## Team Structure" section
 
 **Team Members Format:**
