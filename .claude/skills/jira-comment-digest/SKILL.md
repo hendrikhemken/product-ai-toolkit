@@ -79,13 +79,13 @@ If section exists in COMPANY_CONTEXT.md:
 ### Team Members & Jira Roles
 *For Jira Comment Digest context mapping*
 
-**Hendrik H**
-- Email: hendrik@builderlabs.ai
-- Role: Founder / CPO
+**John Doe**
+- Email: john@company.com
+- Role: Product Manager
 - Jira Active: Yes
 
-**Botti**
-- Email: bot@example.com
+**Jane Smith**
+- Email: jane@company.com
 - Role: Frontend Developer
 - Jira Active: Yes
 ```

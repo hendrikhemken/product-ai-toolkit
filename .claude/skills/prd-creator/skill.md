@@ -29,12 +29,18 @@ The PRD Creator helps Product Managers create modern, lean PRDs in Confluence th
 
 ## 🧭 Workflow: PRD Creation (Overview)
 
-**5-Phase Process:**
+**6-Phase Process:**
+
+0. **Check for Starter Briefs (Optional)** - Load existing research
+   - Check if PRD Starter Brief exists (from `interview-analysis` Skill)
+   - Load brief for 80% head start (Problem, Personas, Metrics, Scope)
+   - Skip to gaps if brief exists, otherwise proceed to Phase 1
 
 1. **Context & Discovery** - Gather information conversationally from PM
    - Feature description, problem statement, user personas
    - Success metrics, scope, technical constraints
    - Confluence/Jira setup
+   - (Skip questions already answered in Starter Brief if loaded)
 
 2. **PRD Type Selection** - Recommend appropriate format
    - Lean PRD (default for agile teams, 1-3 pages)
@@ -60,6 +66,42 @@ The PRD Creator helps Product Managers create modern, lean PRDs in Confluence th
    - Link PRD ↔ Epic bidirectionally
 
 **📖 For detailed step-by-step instructions, see [WORKFLOW.md](WORKFLOW.md)**
+
+---
+
+## 🔗 Integration with Interview Analysis
+
+**PRD Starter Briefs = 80% Head Start!**
+
+If you've done user research with the `interview-analysis` Skill, you can create **PRD Starter Briefs** that contain:
+- ✅ Problem Statement (from pain points)
+- ✅ User Personas (from participants)
+- ✅ Success Metrics (proposed from insights)
+- ✅ Initial Scope (from recommendations)
+- ✅ Supporting Evidence (quotes, frequency data)
+
+**How it works:**
+1. User runs `interview-analysis` Skill → creates `/outputs/interviews/[project]/[project]-analysis.md`
+2. Phase 4.5 generates PRD Starter Briefs → `/outputs/interviews/[project]/[feature]-starter-brief.md`
+3. User starts PRD creation: `"Create PRD from starter brief: [path]"`
+4. PRD Creator loads brief → Phase 0 → skips to gaps → PRD done in half the time!
+
+**Example:**
+```
+User: "Create PRD from starter brief: /outputs/interviews/pm-tool/comment-digest-starter-brief.md"
+
+Claude:
+✅ Loaded: Jira Comment Digest (P0, High Impact/Medium Effort)
+- Problem: 8/10 PMs waste 2h daily sorting Jira comments
+- Personas: Scale-up PMs, 50-200 employees
+- Metrics: Reduce comment sorting time from 2h to 15min
+- Scope: Summarize comment threads, highlight key decisions
+
+I have 80% of context already! Just need:
+- Confluence Space for PRD?
+- Jira Project Key for Epic?
+- PRD Type: Lean or Hybrid?
+```
 
 ---
 

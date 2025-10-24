@@ -18,9 +18,12 @@ The skill will guide you through all sections and generate a complete `COMPANY_C
 
 ### Option 2: Manual Setup
 
-1. Copy the template from `.claude/skills/user-context/TEMPLATE.md`
-2. Save it as `COMPANY_CONTEXT.md` in this folder
-3. Fill out all sections with your company/product details
+1. Copy the template:
+   ```bash
+   cp COMPANY_CONTEXT.template.md COMPANY_CONTEXT.md
+   ```
+2. Edit `COMPANY_CONTEXT.md` with your company/product details
+3. Save and you're done!
 
 ---
 
@@ -28,8 +31,9 @@ The skill will guide you through all sections and generate a complete `COMPANY_C
 
 ```
 user_context/
-├── COMPANY_CONTEXT.md    # Your company/product context (YOU FILL THIS)
-└── raw/                  # Raw files (interviews, docs, assets)
+├── COMPANY_CONTEXT.template.md  # Template (included in repo)
+├── COMPANY_CONTEXT.md           # Your context (gitignored, YOU FILL THIS)
+└── raw/                         # Raw files (interviews, docs, assets)
     └── (your files here)
 ```
 

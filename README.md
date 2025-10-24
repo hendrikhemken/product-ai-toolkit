@@ -2,7 +2,7 @@
 
 **AI-Powered Product Management Assistant for Claude Code**
 
-*Created by [Hendrik Hemken](https://linkedin.com/in/hendrikhemken)*
+*Created by the **Product Brothers** - [Hendrik Hemken](https://linkedin.com/in/hendrikhemken) & [Sören von Sebelin](https://linkedin.com/in/soeren-von-sebelin)*
 
 ---
 
@@ -27,17 +27,24 @@ A lean, Claude Code-based toolkit that helps Product Managers with their daily w
 
 ```bash
 # Clone this repo
-git clone https://github.com/1800Terran/product-ai-toolkit.git
+git clone https://github.com/hendrikhemken/product-ai-toolkit.git
 cd product-ai-toolkit
 
+# Open in Claude Code
+claude code .
+
+# On first session, Claude will auto-detect and guide you
+# through context setup (5 min interactive questionnaire)
+```
+
+**Alternative (Manual Setup):**
+```bash
 # Copy the company context template
 cp user_context/COMPANY_CONTEXT.template.md user_context/COMPANY_CONTEXT.md
 
 # Edit COMPANY_CONTEXT.md with your company details
-# (Company type, team size, product, customer type, etc.)
-
-# Open in Claude Code
-claude-code .
+# Then open in Claude Code
+claude code .
 ```
 
 **3. Start Using**
@@ -210,7 +217,7 @@ Claude: "✅ Updated. Confidence level 5/10?
 
 Found a bug? Have a feature request? Want to add a new skill?
 
-- **Issues:** [github.com/1800Terran/product-ai-toolkit/issues](https://github.com/1800Terran/product-ai-toolkit/issues)
+- **Issues:** [github.com/hendrikhemken/product-ai-toolkit/issues](https://github.com/hendrikhemken/product-ai-toolkit/issues)
 - **Discussions:** Share your workflows, ask questions, help others
 - **Pull Requests:** Welcome! Please follow the existing structure
 
@@ -247,11 +254,17 @@ Built with:
 
 ---
 
-**Created by [Hendrik Hemken](https://linkedin.com/in/hendrikhemken)**
+## 👨‍👨‍💼 Created by the Product Brothers
+
+**Hendrik Hemken** & **Sören von Sebelin** - Two Product Managers who got tired of context-switching between 47 different tools.
+
+This toolkit is our answer: **One AI assistant that actually understands PM work.**
+
+*Connect with us:*
+- 👉 [Hendrik on LinkedIn](https://linkedin.com/in/hendrikhemken)
+- 👉 [Sören on LinkedIn](https://linkedin.com/in/soeren-von-sebelin)
 
 *Open Source PM Toolkit - Help PMs leverage AI for better product work*
-
-👉 [linkedin.com/in/hendrikhemken](https://linkedin.com/in/hendrikhemken)
 
 ---
 

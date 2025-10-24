@@ -1,11 +1,90 @@
 # PRD Creation Workflow
-*Detailed 5-Phase Process*
+*Detailed 6-Phase Process (Phase 0 → Phase 5)*
 
 This document contains the detailed step-by-step workflow for creating PRDs. For overview, see [SKILL.md](SKILL.md).
 
 ---
 
-## 🧭 5-Phase PRD Creation Process
+## 🧭 6-Phase PRD Creation Process
+
+### Phase 0: Check for PRD Starter Briefs (Optional)
+
+**BEFORE asking questions, check if user has existing PRD Starter Briefs.**
+
+PRD Starter Briefs are created by the `interview-analysis` Skill and contain:
+- Problem Statement (from user research)
+- User Personas (from interviews)
+- Success Metrics (proposed)
+- Initial Scope
+- Supporting Evidence (quotes, insights)
+
+**Workflow:**
+
+1. **Ask User:**
+   ```
+   "Quick check: Do you have a PRD Starter Brief from interview analysis?
+
+   If yes, give me the path (e.g., /outputs/interviews/[project]/[feature]-starter-brief.md)
+   and I'll load it for an 80% head start!
+
+   If no, no worries - we'll gather context together."
+   ```
+
+2. **If User provides path:**
+   - Load Starter Brief using Read tool
+   - Extract from YAML Front Matter:
+     - `feature`: Feature Name
+     - `analysis_ref`: Link to original analysis
+     - `insight_refs`: Which insights support this
+     - `priority`: P0/P1/P2
+     - `impact/effort`: Quick assessment
+     - `participants`: Frequency data
+   - Extract from Content:
+     - Problem Statement
+     - User Personas
+     - Success Metrics
+     - Scope (In/Out)
+     - Constraints & Context (user-added!)
+     - Supporting Evidence
+
+3. **Show Loaded Info:**
+   ```
+   "✅ Loaded Starter Brief: [Feature Name]
+
+   Here's what we have:
+   - Problem: [from brief]
+   - Personas: [from brief]
+   - Metrics: [proposed from brief]
+   - Scope: [initial from brief]
+   - Evidence: [X/Y participants mentioned this]
+
+   This gives us an 80% head start!
+
+   I'll still ask a few clarifying questions, but we're way ahead already."
+   ```
+
+4. **Proceed to Phase 1:**
+   - Skip questions already answered in Starter Brief
+   - Focus on gaps: Technical constraints, Confluence/Jira setup, PRD Type
+   - Validate/refine what's in brief with user
+
+**If no Starter Brief:**
+- Proceed directly to Phase 1 (Context & Discovery)
+- Gather all information conversationally
+
+**Hint to User:**
+If user is about to create PRD without research, suggest:
+```
+"💡 Pro Tip: Have you done user interviews yet?
+
+The `interview-analysis` Skill can create PRD Starter Briefs
+from research insights - saves a ton of time and ensures
+data-driven feature definition!
+
+Want to proceed anyway? (Yes/No)"
+```
+
+---
 
 ### Phase 1: Context & Discovery (Conversational)
 

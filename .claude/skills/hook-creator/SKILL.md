@@ -249,7 +249,7 @@ echo '{
         "hooks": [
           {
             "type": "command",
-            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"📋 Project: Beyond7 Website. Stack: Vanilla HTML/CSS/JS. No frameworks!\"}}'"
+            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"📋 Project: Company Website. Stack: Vanilla HTML/CSS/JS. No frameworks!\"}}'"
           }
         ]
       }

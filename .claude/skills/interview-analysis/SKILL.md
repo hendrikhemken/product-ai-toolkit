@@ -218,6 +218,258 @@ confidence: High/Medium/Low
 **Raw Files:** /user_context/raw/interviews/[project]/
 ```
 
+### Phase 4.5: PRD Opportunities (Optional)
+
+**After report generation, offer to create PRD Starter Briefs for promising features.**
+
+This phase bridges Interview Analysis → PRD Creation by preparing "PRD Starter Briefs" that give the `prd-creator` Skill a strong foundation.
+
+#### Step 1: Identify Opportunities
+
+From the analysis, identify potential features/solutions:
+
+```
+"Based on the insights, I see [X] potential feature opportunities:
+
+1. **[Feature Name]** (High Impact/Medium Effort)
+   - Solves Pain Point: [Reference from analysis]
+   - Backed by: [Insight #X] (High Confidence, 7/10)
+   - Quote: "[...]" - P3
+
+2. **[Feature Name]** (Medium Impact/Low Effort)
+   - Addresses: [Job to be Done]
+   - Backed by: [Insight #Y] (Medium Confidence, 4/10)
+
+3. **[Feature Name]** (High Impact/High Effort)
+   - Strategic opportunity from Cross-Cutting Theme Z
+   - Backed by: [Multiple insights]
+
+Want to create PRD Starter Briefs for any of these?"
+```
+
+**Impact/Effort Matrix:**
+- **High Impact/Low Effort** → Quick Wins (P0)
+- **High Impact/Medium Effort** → Strategic (P0-P1)
+- **High Impact/High Effort** → Big Bets (P1-P2)
+- **Medium Impact/Low Effort** → Nice to Have (P1-P2)
+
+#### Step 2: User Selection (Interactive!)
+
+Ask user which opportunities to develop:
+
+```
+"Which features should we create PRD Starter Briefs for?
+- All 3?
+- Just the Quick Wins (#2)?
+- Let's discuss each first?
+
+I'll create starter briefs TOGETHER with you - you can add your thoughts,
+constraints, scope ideas, etc."
+```
+
+**WICHTIG:** Interaktiver Prozess! Nicht einfach automatisch generieren.
+
+#### Step 3: Create Starter Briefs (Collaboratively)
+
+For each selected feature, create a PRD Starter Brief GEMEINSAM mit User:
+
+**Process:**
+1. **Draft from Analysis**
+   - Problem Statement (from Pain Points)
+   - User Personas (from Participants)
+   - Success Metrics (proposed from Insights)
+   - Initial Scope (what's in/out)
+   - Supporting Evidence (quotes, frequency)
+
+2. **User Input Loop**
+   ```
+   "I've drafted a starter brief for [Feature X].
+
+   Before I save it, feedback:
+   - Problem Statement resonant?
+   - Missing any constraints? (technical, business, time)
+   - Scope boundaries clear?
+   - Any must-have context for PRD creation?"
+   ```
+
+3. **Refine Together**
+   - User adds technical constraints
+   - User clarifies scope boundaries
+   - User adds strategic context
+   - User suggests success metrics adjustments
+
+4. **Save Starter Brief**
+   Location: `/outputs/interviews/[project]/[feature-name]-starter-brief.md`
+
+**PRD Starter Brief Template:**
+
+```markdown
+---
+type: prd-starter-brief
+feature: [Feature Name]
+analysis_ref: /outputs/interviews/[project]/[project]-analysis.md
+insight_refs: [1, 3, 5]  # Which insights from analysis
+priority: P0/P1/P2
+impact: High/Medium/Low
+effort: High/Medium/Low
+confidence: High/Medium/Low
+participants: X/Y  # How many mentioned this
+created: YYYY-MM-DD
+status: draft
+---
+
+# PRD Starter Brief: [Feature Name]
+
+## Problem Statement
+
+**User Pain:**
+[Konkret aus Pain Points formuliert - 2-3 sentences]
+
+**Current Situation:**
+[How users work around this today]
+
+**Business Impact:**
+[Why this matters - revenue, retention, efficiency]
+
+---
+
+## User Personas (from Interviews)
+
+**Primary User:** [Role, Company Type, Segment]
+- Characteristics: [Key traits from interviews]
+- Context: [When they encounter this problem]
+- Quote: "[Evidence]" - P[X]
+
+**Secondary User:** [If applicable]
+- [Brief description]
+
+---
+
+## Success Metrics (Proposed)
+
+**Primary Metric:**
+- [Measurable outcome] - Target: [X]
+- Baseline: [Current state if known]
+
+**Secondary Metrics:**
+- [Metric 2] - Target: [Y]
+- [Metric 3] - Target: [Z]
+
+**How to Measure:**
+[Analytics setup, tracking plan, validation method]
+
+---
+
+## Scope (Initial)
+
+### ✅ In Scope (v1)
+- [Core capability 1]
+- [Core capability 2]
+- [Core capability 3]
+
+### 🔮 Future Scope (v2+)
+- [Enhancement 1]
+- [Enhancement 2]
+
+### ❌ Explicitly Out of Scope
+- [Edge case 1]
+- [Feature X that was requested but not core]
+- [Technical complexity Y to avoid now]
+
+---
+
+## Key Supporting Evidence
+
+**From Analysis:** `/outputs/interviews/[project]/[project]-analysis.md`
+
+### High-Confidence Insights
+1. **[Insight Title]** (7/10 participants)
+   - Finding: [1 sentence]
+   - Quote: "[Evidence]" - P[X]
+
+2. **[Insight Title]** (5/10 participants)
+   - Finding: [1 sentence]
+   - Quote: "[Evidence]" - P[Y]
+
+### Pain Points Addressed
+- **[Pain Point]** (Severity: High, 8/10 mentioned)
+  - Current workaround: [How they cope]
+  - Impact: [Business/user cost]
+
+---
+
+## Constraints & Context
+
+**Technical Constraints:**
+[User-added: Stack, APIs, integrations, performance]
+
+**Business Constraints:**
+[User-added: Budget, timeline, resources, compliance]
+
+**Strategic Context:**
+[User-added: How this fits company strategy, OKRs, roadmap]
+
+**Dependencies:**
+[User-added: Other features, systems, teams]
+
+---
+
+## Open Questions
+
+**For PRD Development:**
+- [ ] [Question about scope]
+- [ ] [Question about technical approach]
+- [ ] [Question about stakeholder alignment]
+
+**For Design/Engineering:**
+- [ ] [Technical feasibility question]
+- [ ] [UX design question]
+
+---
+
+## Next Steps
+
+✅ **Ready for `prd-creator` Skill**
+
+**To create PRD:**
+```
+"Create PRD from starter brief: /outputs/interviews/[project]/[feature]-starter-brief.md"
+```
+
+**Recommended PRD Type:** [Lean/Traditional/Hybrid] (based on scope/complexity)
+
+**Stakeholders to Involve:**
+- Design: [For UX/UI]
+- Engineering: [For technical feasibility]
+- [Other teams as needed]
+
+---
+
+**Created from Interview Analysis:** [Date]
+**Analysis:** `/outputs/interviews/[project]/[project]-analysis.md`
+```
+
+#### Step 4: Confirm & Bridge to PRD Creation
+
+After creating starter briefs:
+
+```
+"✅ PRD Starter Briefs created:
+
+1. /outputs/interviews/[project]/feature-a-starter-brief.md (P0)
+2. /outputs/interviews/[project]/feature-b-starter-brief.md (P1)
+
+These briefs are 80% done - perfect foundation for PRD creation!
+
+Next steps:
+- Use `prd-creator` Skill to turn briefs into full PRDs
+- Command: 'Create PRD from starter brief: [path]'
+
+Want to start with Feature A now?"
+```
+
+---
+
 ### Phase 5: Review & Iterate
 
 1. **Show Report to User**
@@ -265,6 +517,13 @@ User: "Analyze my PM Tool interviews"
 - Executive Summary: "Scale-up PMs waste 2-3h daily on Jira/Confluence manual work"
 - Top Insight: "Comment management is #1 pain point (High Confidence, 8/10)"
 - Recommendation: "Build Jira Comment Digest tool (High Impact, Medium Effort)"
+
+**Phase 4.5 (PRD Opportunities):**
+- Identified 2 PRD opportunities: "Jira Comment Digest" (P0), "Confluence-Jira Sync" (P1)
+- User selected: "Jira Comment Digest"
+- Created: `/outputs/interviews/pm-tool/comment-digest-starter-brief.md`
+- User added constraints: "Must integrate with existing Jira API", "Target: <5min setup"
+- Ready for `prd-creator` Skill!
 
 ### Example 2: Usability Testing
 
@@ -320,15 +579,19 @@ segments: [B2B, B2C, Enterprise]
 - `interview-guide` Skill creates the research plan this Skill references
 
 **Downstream:**
-- `prd-creator` Skill can use insights for feature definition
+- `prd-creator` Skill can use **PRD Starter Briefs** for 80% head start
+  - Phase 4.5 creates briefs → `prd-creator` loads them → fast PRD creation
+  - Command: `"Create PRD from starter brief: /outputs/interviews/[project]/[feature]-starter-brief.md"`
 - `user-stories` Skill can create tickets based on recommendations
 
 **Cross-Reference:**
 When creating interview guide, remind user:
 > "After interviews, use `interview-analysis` Skill to synthesize insights!"
 
-When analyzing interviews, reference original guide:
-> "Interview Guide: /outputs/interview-guides/[project].md"
+When analyzing interviews:
+1. Reference original guide: `/outputs/interview-guides/[project].md`
+2. Offer PRD Opportunities: "Want to create PRD Starter Briefs for these features?"
+3. Bridge to PRD Creation: "Ready to create PRD from brief? Use `prd-creator` Skill!"
 
 ---
 
@@ -358,7 +621,10 @@ Product-Toolkit/
 ├── outputs/
 │   └── interviews/
 │       └── [project-name]/
-│           └── [project-name]-analysis.md
+│           ├── [project-name]-analysis.md
+│           ├── feature-a-starter-brief.md  # PRD Starter Briefs
+│           ├── feature-b-starter-brief.md
+│           └── feature-c-starter-brief.md
 └── user_context/
     └── raw/
         └── interviews/
@@ -368,6 +634,8 @@ Product-Toolkit/
                 ├── session-3.pdf
                 └── ...
 ```
+
+**Note:** Starter Briefs saved in SAME folder as analysis (no subfolder!) - keeps structure minimal.
 
 ---
 
