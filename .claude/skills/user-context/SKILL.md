@@ -34,6 +34,12 @@ Ask questions ONE AT A TIME in conversational style. Guide the user through the 
 
 **Core Questions (Must-Have):**
 
+0. **Language Preference** (FIRST QUESTION - always in English)
+   - "Language preference? (en/de)"
+   - User answers → Switch to chosen language for all following questions
+   - Write to COMPANY_CONTEXT.md "User Preferences" section
+   - Important: All future Claude responses must be in this language!
+
 1. **Company Name & Industry**
    - "What's your company name and industry?"
    - Example: "Beyond 7, AI Consulting & Training"
@@ -82,6 +88,17 @@ Ask questions ONE AT A TIME in conversational style. Guide the user through the 
    - If no Jira access or user skips: Continue without blocking
    - Solo users: Offer to add just themselves
 
+9.75. **Jira Projects & Confluence Spaces** (Optional)
+   - "Welche Jira Projects und Confluence Spaces nutzt du regelmäßig?"
+   - **Jira Projects:** Ask for project keys, komma-separiert
+     - Example: "PROJ, DEV, SUPPORT"
+     - Explain: "Das sind die Kürzel die in deinen Ticket-Keys vorkommen (z.B. PROJ-123)"
+   - **Confluence Spaces:** Ask for space keys, komma-separiert
+     - Example: "TEAM, PROD, DEV"
+     - Explain: "Das sind die Space-Keys wo du PRDs & Docs speicherst"
+   - Write to COMPANY_CONTEXT.md "Tools & Workflow" section
+   - If user doesn't know or skips: Continue without blocking
+
 10. **Portfolio Structure** (Optional - ask ONLY if Head of Product or managing multiple products)
     - "Do you manage a single product or a portfolio?"
     - If portfolio: "List your products and mention if they roll up into one main product"
@@ -108,6 +125,7 @@ After collecting all info:
 Update `/user_context/COMPANY_CONTEXT.md`:
 - **Init Mode:** Fill in all sections based on template
 - **Update Mode:** Update only changed sections, preserve rest
+- **Language Preference:** Update "User Preferences" section with chosen language (en/de)
 - **Team Members:** If collected in Step 9.5, update "Team Members & Jira Roles" section in COMPANY_CONTEXT.md
 
 **Important:**
@@ -115,6 +133,7 @@ Update `/user_context/COMPANY_CONTEXT.md`:
 - Keep existing content that wasn't changed (Update Mode)
 - Follow template structure from `.claude/skills/user-context/TEMPLATE.md`
 - Team members go in Body (NOT YAML front matter!) under "## Team Structure" section
+- Language preference goes in "User Preferences" section (NOT YAML front matter!)
 
 **Team Members Format:**
 ```markdown
@@ -151,9 +170,15 @@ I'll help you set up your context so I can give you tailored recommendations. Th
 
 Let's start simple:
 
-**What's your company name and industry?**
+**Language preference? (en/de)**"
 
-Example: 'Acme Corp, FinTech'"
+User: "de"
+
+Claude: "Super! Ab jetzt auf Deutsch. 🇩🇪
+
+**Wie heißt deine Firma und in welcher Branche seid ihr?**
+
+Beispiel: 'Acme Corp, FinTech'"
 
 User: "TechFlow, SaaS for project management"
 
@@ -240,7 +265,9 @@ Since you're now at a larger company, you might want to switch from weekly to qu
 - Can always update later
 
 **Conversational Tone:**
-- Friendly, helpful, German & duzen
+- Friendly, helpful
+- Adapt language based on user preference (en/de)
+- If German: use "duzen" (informal)
 - Examples for every question
 - Explain WHY we need certain info (e.g., "Company type determines OKR approach")
 

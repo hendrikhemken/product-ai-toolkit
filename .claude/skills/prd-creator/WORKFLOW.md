@@ -120,9 +120,15 @@ Want to proceed anyway? (Yes/No)"
    - Dependencies (andere Features, Teams)
 
 7. **Confluence & Jira Setup:**
-   - "Welcher Confluence Space? (z.B. 'PROD', 'DEV')"
-   - "Parent Page? (falls Teil einer größeren Initiative)"
-   - "Jira Project Key? (z.B. 'PROD-123' für Epic)"
+   - **Confluence Space:**
+     - Check COMPANY_CONTEXT.md → "Tools & Workflow" → "Confluence Spaces"
+     - If found: Use listed spaces (ask which one if multiple)
+     - If empty: Ask "Welcher Confluence Space? (z.B. 'PROD', 'DEV')"
+   - **Jira Project:**
+     - Check COMPANY_CONTEXT.md → "Tools & Workflow" → "Jira Projects"
+     - If found: Use listed projects (ask which one if multiple)
+     - If empty: Ask "Jira Project Key? (z.B. 'PROD', 'DEV')"
+   - **Parent Page:** (Optional) "Parent Page? (falls Teil einer größeren Initiative)"
 
 ---
 

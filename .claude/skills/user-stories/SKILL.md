@@ -44,7 +44,10 @@ Follow this workflow for every User Story request:
 - "Wer sind die User? (Persona, Role)"
 - "Was ist der erwartete Value/Outcome?"
 - "Gibt es technische Constraints?"
-- "Welches Jira Project? (z.B. 'PROD', 'DEV')"
+- **Jira Project:**
+  - Check COMPANY_CONTEXT.md → "Tools & Workflow" → "Jira Projects"
+  - If found: Use listed projects (ask which one if multiple)
+  - If empty: Ask "Welches Jira Project? (z.B. 'PROD', 'DEV')"
 
 ### 3. Create Stories (INVEST-Compliant)
 **Story Format:**
