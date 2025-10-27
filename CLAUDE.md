@@ -387,42 +387,17 @@ Soll ich den Setup starten? 🚀
 
 ## 📋 Available Skills
 
-### 🤖 Agent Skills (Model-invoked)
+Skills aktivieren sich **automatisch** basierend auf Keywords - du entscheidest autonom wann du sie nutzt.
 
-Skills aktivieren sich **automatisch** basierend auf User-Request - du entscheidest autonom wann du sie nutzt.
-User muss NICHT explizit danach fragen, Skills matchen auf Keywords und Context.
+**Aktuell verfügbar:**
+- **OKRs:** `okr-expert`, `okr-monday`, `okr-friday`
+- **PRDs & User Stories:** `prd-creator`, `user-stories`
+- **User Research:** `interview-guide`, `interview-analysis`
+- **Utilities:** `user-context`, `jira-comment-digest`, `skill-creator`, `hook-creator`
 
-### ✅ Implementierte Skills:
-- **`okr-expert`** - OKR Creation & Review (Wodtke + Klau Best Practices)
-  - Location: `.claude/skills/okr-expert/SKILL.md`
-  - Trigger: "OKR", "objectives", "key results", "quarterly planning"
-- **`okr-monday`** - Monday Commitment Weekly Check-in (Wodtke Weekly Cadence)
-  - Location: `.claude/skills/okr-monday/SKILL.md`
-  - Trigger: "Monday", "Weekly OKR", "OKR Check-in", "Monday Commitments"
-- **`okr-friday`** - Friday Celebration Weekly Check-in (Wodtke Weekly Cadence)
-  - Location: `.claude/skills/okr-friday/SKILL.md`
-  - Trigger: "Friday", "End of week", "OKR Review", "Friday Wins"
-- **`prd-creator`** - PRD Creation in Confluence mit Jira Epic Linking
-  - Location: `.claude/skills/prd-creator/SKILL.md`
-  - Trigger: "PRD erstellen", "Product Requirements", "Feature Document"
-- **`user-stories`** - User Stories & Epic Breakdown für Jira
-  - Location: `.claude/skills/user-stories/SKILL.md`
-  - Trigger: "User Stories", "break down epic", "Jira tickets", "Backlog"
-- **`interview-guide`** - User Interview Guide Creation (Discovery, Validation, Usability)
-  - Location: `.claude/skills/interview-guide/SKILL.md`
-  - Trigger: "interview guide", "user research", "discovery interviews", "usability testing"
-- **`interview-analysis`** - User Research Synthesis & Insight Extraction
-  - Location: `.claude/skills/interview-analysis/SKILL.md`
-  - Trigger: "analyze interviews", "interview insights", "research synthesis", "extract findings"
-- **`jira-comment-digest`** - Jira Comment Thread Summarization
-  - Location: `.claude/skills/jira-comment-digest/SKILL.md`
-  - Trigger: "Jira comments", "comment digest", "ticket discussions"
-- **`user-context`** - Interactive Company/Product/Team Context Setup
-  - Location: `.claude/skills/user-context/SKILL.md`
-  - Trigger: "setup context", "getting started", "onboarding", "update context"
-- **`skill-creator`** - Create new Claude Code Skills
-  - Location: `.claude/skills/skill-creator/SKILL.md`
-  - Trigger: "create a skill", "new skill", "skill that does"
+User muss NICHT explizit nach Skills fragen - sie matchen automatisch auf Context und Keywords.
+
+**Wenn User fragt "Was kannst du?"** → Zeige die Feature-Liste aus der README (OKRs, PRDs, User Stories, Research, etc.) nicht die internen Skill-Namen.
 
 ---
 
