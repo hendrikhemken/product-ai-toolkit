@@ -9,6 +9,15 @@
             "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"PreToolUse\", \"permissionDecision\": \"deny\", \"permissionDecisionReason\": \"⚠️ Jira Delete ist aus Sicherheitsgründen deaktiviert. Bitte lösche Tickets manuell in Jira wenn wirklich nötig.\"}}'"
           }
         ]
+      },
+      {
+        "matcher": "mcp__MCP_DOCKER__confluence_delete_page",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"PreToolUse\", \"permissionDecision\": \"deny\", \"permissionDecisionReason\": \"⚠️ Confluence Delete ist aus Sicherheitsgründen deaktiviert. Bitte lösche Pages manuell in Confluence wenn wirklich nötig.\"}}'"
+          }
+        ]
       }
     ]
   }

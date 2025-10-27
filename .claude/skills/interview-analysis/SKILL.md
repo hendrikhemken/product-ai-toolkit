@@ -1,6 +1,6 @@
 ---
 name: interview-analysis
-description: Analyzes user interview sessions against research goals from interview guides. Extracts insights, identifies patterns across multiple sessions, maps findings to original objectives. Use when user mentions 'analyze interviews', 'interview extraction', 'research synthesis', 'interview insights', 'user research analysis', or has interview transcripts/notes to process. Works with .txt, .md, .pdf files in /user_context/raw/interviews/[project-name]/.
+description: Analyzes user interview sessions against research goals from interview guides. Extracts insights, identifies patterns across multiple sessions, maps findings to original objectives. Use when user mentions 'analyze interviews', 'ich möchte das Interview Auswerten', 'Interview analysieren', 'interview extraction', 'research synthesis', 'interview insights', 'user research analysis', or has interview transcripts/notes to process. Works with .txt, .md, .pdf files in /user_context/raw/interviews/[project-name]/.
 ---
 
 # Interview Analysis
