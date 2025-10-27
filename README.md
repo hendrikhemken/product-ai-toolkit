@@ -8,9 +8,11 @@
 
 A lean, Claude Code-based toolkit that helps Product Managers with their daily work:
 - Create OKRs (with best practices from Wodtke + Klau)
-- Write User Stories & break down EPICs
-- Create PRDs in Confluence
+- Write PRDs in Confluence with Jira Epic linking
+- Break down EPICs into User Stories
+- Run user interviews & analyze insights
 - Weekly OKR check-ins (Monday commitments, Friday celebrations)
+- Summarize Jira comment threads
 
 **Target Audience:** Solo PMs & PM Teams in Startups, Scale-ups & Corporates
 
@@ -37,15 +39,8 @@ claude
 # through context setup (5 min interactive questionnaire)
 ```
 
-**Alternative (Manual Setup):**
-```bash
-# Copy the company context template
-cp user_context/COMPANY_CONTEXT.template.md user_context/COMPANY_CONTEXT.md
-
-# Edit COMPANY_CONTEXT.md with your company details
-# Then open in Claude Code
-claude code .
-```
+**Alternative (Skip Setup):**
+If you prefer to dive right in, just run `claude` - you can set up context later by saying "Setup my context".
 
 **3. Start Using**
 
@@ -76,6 +71,17 @@ The toolkit activates automatically when you mention relevant keywords:
 - **AI-assisted drafting** - 80% draft, 20% human refinement
 - **Direct publishing** - Creates pages in Confluence via MCP
 - **Jira Epic linking** - Bidirectional PRD ↔ Epic links
+
+### 🎤 User Research
+- **Interview guides** - Discovery, Validation, Usability Testing templates
+- **Interview analysis** - Extract insights from transcripts, identify patterns
+- **Research synthesis** - Map findings to original research goals
+
+### 🔧 Productivity Tools
+- **Context setup** - Interactive company/product/team context collection
+- **Jira comment digest** - Summarize ticket discussions & ongoing threads
+- **Skill creator** - Meta-skill for building custom Claude Code skills
+- **Hook creator** - Create Claude Code hooks for tool control & automation
 
 ---
 
@@ -155,22 +161,33 @@ product-ai-toolkit/
 │   ├── marketplace.json         # Product-Toolkit Marketplace
 │   └── plugin.json              # Plugin metadata
 ├── .claude/
-│   └── skills/                  # Agent skills (okr-expert, prd-creator, user-stories)
-│       ├── okr-expert/          # OKR creation & weekly check-ins
-│       ├── okr-monday/          # Monday commitments skill
-│       ├── okr-friday/          # Friday celebration skill
-│       ├── prd-creator/         # PRD creation in Confluence
-│       ├── user-stories/        # Epic breakdown & story creation
-│       └── skill-creator/       # Meta-skill for creating new skills
+│   └── skills/                  # Agent skills (auto-activate on keywords)
+│       ├── okr-expert/          # OKR creation & review (Wodtke + Klau)
+│       ├── okr-monday/          # Monday commitment check-ins
+│       ├── okr-friday/          # Friday celebration check-ins
+│       ├── prd-creator/         # PRD creation in Confluence + Jira Epic linking
+│       ├── user-stories/        # Epic breakdown & User Story creation
+│       ├── interview-guide/     # User research interview guide creation
+│       ├── interview-analysis/  # Research synthesis & insight extraction
+│       ├── jira-comment-digest/ # Jira comment thread summarization
+│       ├── user-context/        # Interactive context setup
+│       ├── skill-creator/       # Create new Claude Code skills
+│       └── hook-creator/        # Create Claude Code hooks
 ├── user_context/
-│   ├── COMPANY_CONTEXT.template.md   # Fill this out for your company
-│   └── COMPANY_CONTEXT.md            # Your personalized context (gitignored)
+│   ├── COMPANY_CONTEXT.template.md  # Template for setup (reference)
+│   ├── COMPANY_CONTEXT.md           # Your personalized context (gitignored)
+│   ├── raw/                         # Drop your raw research files here (gitignored)
+│   └── README.md                    # User context structure guide
 ├── examples/                    # Best practice examples
 │   └── okrs/                    # Example OKRs from real companies (anonymized)
 ├── best-practices/              # Deep-dive guides & workflows
+│   ├── CLAUDE_CODE_PLUGINS.md   # Plugin development guide
+│   └── FIGMA_MCP.md             # Figma MCP Server workflow
 └── outputs/                     # Your generated deliverables (gitignored)
     ├── okrs/                    # Your OKR files
-    └── prd/                     # Your PRD drafts
+    │   └── CURRENT_WEEK.md      # Weekly OKR tracking (auto-loaded)
+    ├── prd/                     # Your PRD drafts
+    └── meeting-notes/           # Meeting notes & summaries
 ```
 
 ---
