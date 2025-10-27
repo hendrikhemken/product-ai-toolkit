@@ -55,14 +55,14 @@ This is the **first public release** of the Product Toolkit - your AI-powered da
 ```bash
 git clone https://github.com/hendrikhemken/product-ai-toolkit.git
 cd product-ai-toolkit
-claude code .
+claude
 ```
 
 ### Option B: Download ZIP
 
 1. Download the ZIP from this release (see Assets below)
 2. Extract to your preferred location
-3. Open in Claude Code: `claude code /path/to/product-ai-toolkit`
+3. Open in Claude Code: `cd /path/to/product-ai-toolkit && claude`
 
 **Full installation guide:** [INSTALLATION.md](https://github.com/hendrikhemken/product-ai-toolkit/blob/main/INSTALLATION.md)
 
@@ -224,7 +224,7 @@ See [LICENSE](https://github.com/hendrikhemken/product-ai-toolkit/blob/main/LICE
 ```bash
 git clone https://github.com/hendrikhemken/product-ai-toolkit.git
 cd product-ai-toolkit
-claude code .
+claude
 ```
 
 **Or download the ZIP from Assets below** ⬇️

@@ -47,7 +47,7 @@ git clone https://github.com/hendrikhemken/product-ai-toolkit.git
 cd product-ai-toolkit
 
 # 3. Open in Claude Code
-claude code .
+claude
 ```
 
 **Done! Skip to [First-Time Setup](#-first-time-setup)**
@@ -79,7 +79,7 @@ claude code .
 
 4. **Open in Claude Code:**
    ```bash
-   claude code .
+   claude
    ```
 
    **First session:** Claude auto-detects you're new and guides you through context setup (5 min).

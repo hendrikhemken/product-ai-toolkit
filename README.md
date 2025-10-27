@@ -31,7 +31,7 @@ git clone https://github.com/hendrikhemken/product-ai-toolkit.git
 cd product-ai-toolkit
 
 # Open in Claude Code
-claude code .
+claude
 
 # On first session, Claude will auto-detect and guide you
 # through context setup (5 min interactive questionnaire)

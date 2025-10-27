@@ -53,7 +53,3 @@ node_modules/
 temp/
 tmp/
 
-# Private Skills (contain personal data, not synced to GitHub)
-# Add your private skills here if needed
-# Example:
-# .claude/skills/my-private-skill/
